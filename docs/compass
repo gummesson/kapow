@@ -1,0 +1,8 @@
+
+ ~ Kapow ~
+
+ Compass plugin
+
+ cmps   Cycle through common Compass commands by pressing <Tab>
+ cmpsc  compass compile [OPTIONS]
+ cmpsw  compass watch [OPTIONS]

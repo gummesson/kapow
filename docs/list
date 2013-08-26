@@ -1,0 +1,8 @@
+
+ ~ Kapow ~
+
+ List plugin
+
+ lcd         List all files in the current directory
+ lff *.md    List all files with the specified extension
+ lfi "word"  List all files that contains the specified string

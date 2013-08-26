@@ -1,0 +1,2 @@
+# ~ Kapow! ~
+# Example custom plugin
