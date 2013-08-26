@@ -2,7 +2,7 @@
 # Simple theme
 
 # C:\>
-Function prompt { 
+Function Prompt { 
   Write-Host "$pwd" -NoNewline
   Write-Host ">" -NoNewline
   return " "

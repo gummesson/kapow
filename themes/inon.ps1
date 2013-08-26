@@ -2,7 +2,7 @@
 # Inon theme
 
 # User in C:\Git\Repo on * master ~>
-Function prompt {
+Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host " in " -NoNewline
   Write-Host "$pwd" -NoNewline -ForegroundColor Red

@@ -2,7 +2,7 @@
 # Punchy theme
 
 # [User][C:\Git\Repo][* master]>
-Function prompt {
+Function Prompt {
   Write-Host "[" -NoNewline
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host "]" -NoNewline

@@ -2,7 +2,7 @@
 # Bashlet theme
 
 # User@Computer $
-Function prompt {
+Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host "@" -NoNewline
   Write-Host "$env:computername" -NoNewline -ForegroundColor Red
