@@ -15,7 +15,8 @@ If ($PSVersionTable.PSVersion.Major -eq 3) {
     more "$KapowDocsPath\$Doc"
   }
 } Else {
-  Function Plugin-Kapow-Docs ($Doc) {
+  Function Plugin-Kapow-Docs {
+    Param($Doc)
     more "$KapowDocsPath\$Doc"
   }
 }

@@ -18,10 +18,12 @@ Function Plugin-List-Files {
   Get-ChildItem -Name
 }
 
-Function Plugin-List-FindFiles ($Type) { 
+Function Plugin-List-FindFiles { 
+  Param($Type)
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
-Function Plugin-List-FindInside ($Type, $Term) { 
+Function Plugin-List-FindInside { 
+  Param($Type, $Term)
   Get-ChildItem -Recurse -Include $Type | Select-String $Term
 }

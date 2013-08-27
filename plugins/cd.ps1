@@ -32,7 +32,8 @@ Function Plugin-Cd-UpFive {
   Set-Location ../../../../../
 }
 
-Function Plugin-Cd-MkDir ($Path) {
+Function Plugin-Cd-MkDir {
+  Param($Path)
   New-Item -Path $Path -ItemType directory > $null
   Set-Location $Path
 }

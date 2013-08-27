@@ -19,7 +19,8 @@ Set-Alias j  Plugin-Jump-Get
 Set-Alias jm Plugin-Jump-Set
 
 # Functions
-Function Plugin-Jump-Get ($Dir) {
+Function Plugin-Jump-Get {
+  Param($Dir)
   Set-Location (Get-Content $PluginJumpCacheFile | Select-String $Dir)
 }
 

@@ -8,7 +8,8 @@
 #  rake <Tab>  Cycle through the specific tasks of the project.
 
 # Functions
-Function TabExpansion ($Line, $Cmd) {
+Function TabExpansion {
+ Param($Line, $Cmd)
   If ($Line -match "rake") {
     rake -T | ForEach { 
       If ($_ -match "^rake ($Cmd\S*)" ) { return $matches[1] }
