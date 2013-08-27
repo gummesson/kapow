@@ -48,6 +48,10 @@ The look of the PowerShell itself leaves a lot to be desired. If you want a more
 
 ![Bashlet theme](http://i.imgur.com/a7HecHS.png)
 
+### Crunchy theme
+
+![Crunchy theme](http://i.imgur.com/dRL5iHK.png)
+
 ### Inon theme
 
 ![Inon theme](http://i.imgur.com/yX5Uf9b.png)
