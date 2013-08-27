@@ -1,5 +1,7 @@
 # ~ Kapow! ~
+#
 # Web plugin
+#  For running various web based commands.
 
 # Aliases
 Set-Alias goo Plugin-Web-SearchGoogle
