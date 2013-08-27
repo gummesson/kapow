@@ -3,5 +3,7 @@
 
  Utilites plugin
 
- time [COMMAND]  Measure the time of the command
- psversion       Get the current version of the PowerShell
+ clip              Copy the output to the clipboard
+ touch [FILENAME]  Create a new file with the desired filename
+ time [COMMAND]    Measure the time of the command
+ psversion         Get the current version of the PowerShell

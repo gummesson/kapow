@@ -9,7 +9,7 @@ Set-Alias docs Plugin-Kapow-Docs
 If ($PSVersionTable.PSVersion.Major -eq 3) { 
   Function Plugin-Kapow-Docs {
     Param([ValidateSet(
-      "cd", "clip", "compass", "git", "jekyll", "jump", "list",
+      "cd", "compass", "git", "jekyll", "jump", "list",
       "lwd", "rubygems", "tab", "utils", "web")]
     $Doc)
     more "$KapowDocsPath\$Doc"
