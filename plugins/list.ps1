@@ -25,5 +25,7 @@ Function Plugin-List-FindFiles {
 
 Function Plugin-List-FindInside { 
   Param($Type, $Term)
-  Get-ChildItem -Recurse -Include $Type | Select-String $Term
+  Get-ChildItem -Recurse -Include $Type | Select-String $Term | ForEach {
+    (($_ -split ":\s+") -join ":")
+  }
 }
