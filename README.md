@@ -38,9 +38,9 @@ The next step is to set the `$KapowDefaultPath` variable to point to the right f
 
 The last thing you need to do is to choose which plugins to use. Look around in the `plugins` and then add them to the `$KapowUserPlugins` array in the `Microsoft.PowerShell_profile.ps1` file and you're done!
 
-### Optional: install Console2
+### Optional: install a better console
 
-The look of the PowerShell itself leaves a lot to be desired. If you want a more fine tuned experience I highly recommend that you install [Console2](http://sourceforge.net/projects/console/).
+The look of the PowerShell itself leaves a lot to be desired. If you want a more fine tuned experience I highly recommend that you install [Console2](http://sourceforge.net/projects/console/) or even better, [ConsoleZ](https://github.com/cbucher/console).
 
 ## Screenshots
 
