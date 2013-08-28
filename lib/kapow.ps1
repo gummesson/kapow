@@ -6,7 +6,6 @@ $KapowCachePath = "$HOME\Documents\WindowsPowerShell\cache"
 $KapowCustomPath = "$KapowDefaultPath\custom"
 $KapowDocsPath = "$KapowDefaultPath\docs"
 
-
 # Import Kapow! plugins
 Foreach ($Plugin in $KapowUserPlugins) {
   . $KapowDefaultPath\plugins\$Plugin.ps1
