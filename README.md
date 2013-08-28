@@ -40,7 +40,7 @@ The last thing you need to do is to choose which plugins to use. Look around in 
 
 ### Optional: install a better console
 
-The look of the PowerShell itself leaves a lot to be desired. If you want a more fine tuned experience I highly recommend that you install [Console2](http://sourceforge.net/projects/console/) or even better, [ConsoleZ](https://github.com/cbucher/console).
+The look of the PowerShell itself leaves a lot to be desired. If you want a more fine tuned experience I highly recommend that you install [Console2](http://sourceforge.net/projects/console/), or better yet, [ConsoleZ](https://github.com/cbucher/console).
 
 ## Screenshots
 
