@@ -1,6 +1,6 @@
 # ~ Kapow! ~
 #
-#  Compass plugin
+#  Chocolatey plugin
 #  For working with Chocolatey.
 #
 # Usage:
