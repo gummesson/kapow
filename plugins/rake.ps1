@@ -1,7 +1,7 @@
 # ~ Kapow! ~
 #
-# Tab expansion plugin
-#  For enabling case-by-case tab expansion for common tasks 
+# Rake plugin
+#  For enabling case-by-case tab expansion for Rake tasks 
 #  inside a project's root directory.
 #
 # Usage:
