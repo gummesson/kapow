@@ -7,5 +7,5 @@ Function Prompt {
   Write-Host "@" -NoNewline
   Write-Host "$env:computername" -NoNewline -ForegroundColor Red
   Write-Host " $" -NoNewline
-  return " "
+  Return " "
 }

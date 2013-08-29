@@ -8,7 +8,7 @@ Function Prompt {
   Write-Host "$pwd" -NoNewline -ForegroundColor Red
   Write-Host $(Kapow-Theme-GitBranch) -NoNewline -ForegroundColor Yellow
   Write-Host " ~>" -NoNewline
-  return " "
+  Return " "
 }
 
 Function Kapow-Theme-GitBranch {

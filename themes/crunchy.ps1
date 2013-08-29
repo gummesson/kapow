@@ -16,7 +16,7 @@ Function Prompt {
   Write-Host $(Kapow-Theme-GitBranch)
   Write-Host "->" -NoNewline -ForegroundColor Cyan
   Write-Host " %" -NoNewline
-  return " "
+  Return " "
 }
 
 Function Kapow-Theme-GitBranch {
