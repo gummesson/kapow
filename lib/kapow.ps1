@@ -6,7 +6,7 @@ $KapowCustomPath = "$KapowDefaultPath\custom"
 $KapowDocsPath = "$KapowDefaultPath\docs"
 
 # Import Kapow! plugins
-Foreach ($Plugin in $KapowDefaultPlugins) {
+ForEach ($Plugin in $KapowDefaultPlugins) {
   . $KapowDefaultPath\plugins\$Plugin.ps1
 }
 

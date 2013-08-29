@@ -13,7 +13,7 @@ $env:LESS = 'FRSX'
 # Remove conflicting aliases
 $KapowGitConflicts = ("gc", "gi", "gl", "gm", "gp")
 
-Foreach ($Alias in $KapowGitConflicts) {
+ForEach ($Alias in $KapowGitConflicts) {
   Remove-Item alias:\$Alias -Force
 }
 
