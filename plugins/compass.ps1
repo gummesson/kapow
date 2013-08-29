@@ -7,12 +7,12 @@
 #  cmps <Tab>  Cycle through common Compass commands.
 
 # Aliases
-Set-Alias cmps  Plugin-Compass-TabExpansion
-Set-Alias cmpsc Plugin-Compass-Compile
-Set-Alias cmpsw Plugin-Compass-Watch
+Set-Alias cmps  Kapow-Compass-TabExpansion
+Set-Alias cmpsc Kapow-Compass-Compile
+Set-Alias cmpsw Kapow-Compass-Watch
 
 # Functions
-Function Plugin-Compass-TabExpansion {
+Function Kapow-Compass-TabExpansion {
   Param([ValidateSet(
     "clean", "compile", "config", "create", "extension" ,"framework",
     "grid-img", "help", "imports", "init", "install", "interactive",
@@ -21,10 +21,10 @@ Function Plugin-Compass-TabExpansion {
   compass $Cmd ($args -join "")
 }
 
-Function Plugin-Compass-Compile {
+Function Kapow-Compass-Compile {
   compass compile ($args -join "") 
 }
 
-Function Plugin-Compass-Watch {
+Function Kapow-Compass-Watch {
   compass watch ($args -join "") 
 }

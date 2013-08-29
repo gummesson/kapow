@@ -9,21 +9,21 @@
 #  lfi "word"  List all files that contains the specified string
 
 # Aliases
-Set-Alias lcd Plugin-List-Files
-Set-Alias lff Plugin-List-FindFiles
-Set-Alias lfi Plugin-List-FindInside
+Set-Alias lcd Kapow-List-Files
+Set-Alias lff Kapow-List-FindFiles
+Set-Alias lfi Kapow-List-FindInside
 
 # Functions
-Function Plugin-List-Files {
+Function Kapow-List-Files {
   Get-ChildItem -Name
 }
 
-Function Plugin-List-FindFiles { 
+Function Kapow-List-FindFiles { 
   Param($Type)
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
-Function Plugin-List-FindInside { 
+Function Kapow-List-FindInside { 
   Param($Type, $Term)
   Get-ChildItem -Recurse -Include $Type | Select-String $Term | ForEach {
     (($_ -split ":\s+") -join ":")

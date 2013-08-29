@@ -3,11 +3,11 @@
 #  For accessing the Kapow documentation.
 
 # Aliases
-Set-Alias docs Plugin-Kapow-Docs
+Set-Alias docs Kapow-Kapow-Docs
 
 # Funcions
 If ($PSVersionTable.PSVersion.Major -eq 3) { 
-  Function Plugin-Kapow-Docs {
+  Function Kapow-Kapow-Docs {
     Param([ValidateSet(
       "cd", "chocolatey","compass", "edit", "git", "jekyll", "jump",
       "list", "lwd", "rubygems", "tab", "utils", "web")]
@@ -15,7 +15,7 @@ If ($PSVersionTable.PSVersion.Major -eq 3) {
     more "$KapowDocsPath\$Doc"
   }
 } Else {
-  Function Plugin-Kapow-Docs {
+  Function Kapow-Kapow-Docs {
     Param($Doc)
     more "$KapowDocsPath\$Doc"
   }

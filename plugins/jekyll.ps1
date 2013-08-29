@@ -7,10 +7,10 @@
 #  jkl <Tab>  Cycle through common Jekyll commands.
 
 # Aliases
-Set-Alias jkl Plugin-Jekyll-TabExpansion
+Set-Alias jkl Kapow-Jekyll-TabExpansion
 
 # Functions
-Function Plugin-Jekyll-TabExpansion {
+Function Kapow-Jekyll-TabExpansion {
   Param([ValidateSet(
     "build", "docs", "doctor", "help", "import", "new", "serve")]
   $Cmd)

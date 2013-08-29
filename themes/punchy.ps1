@@ -9,12 +9,12 @@ Function Prompt {
   Write-Host "[" -NoNewline
   Write-Host "$pwd" -NoNewline -ForegroundColor Red
   Write-Host "]" -NoNewline
-  Write-Host $(Theme-Punchy-GitBranch) -NoNewline
+  Write-Host $(Kapow-Theme-GitBranch) -NoNewline
   Write-Host ">" -NoNewline
   return " "
 }
 
-Function Theme-Punchy-GitBranch {
+Function Kapow-Theme-GitBranch {
   If (Test-Path -Path .\.git) {
     Write-Host "[" -NoNewline
     Write-Host $(git branch) -NoNewline -ForegroundColor Yellow

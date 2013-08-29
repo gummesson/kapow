@@ -9,27 +9,27 @@
 #  jl                  List the marked directories
 
 # The cache file
-$PluginJumpCacheFile = "$KapowCachePath\jumps"
+$KapowJumpCacheFile = "$KapowCachePath\jumps"
 
-If (-Not (Test-Path -Path $PluginJumpCacheFile)) {
-  New-Item -Path $PluginJumpCacheFile -ItemType file > $null
+If (-Not (Test-Path -Path $KapowJumpCacheFile)) {
+  New-Item -Path $KapowJumpCacheFile -ItemType file > $null
 }
 
 # Aliases
-Set-Alias j  Plugin-Jump-Get
-Set-Alias jm Plugin-Jump-Set
-Set-Alias jl Plugin-Jump-List
+Set-Alias j  Kapow-Jump-Get
+Set-Alias jm Kapow-Jump-Set
+Set-Alias jl Kapow-Jump-List
 
 # Functions
-Function Plugin-Jump-Get {
+Function Kapow-Jump-Get {
   Param($Dir)
-  Set-Location (Get-Content $PluginJumpCacheFile | Select-String $Dir)
+  Set-Location (Get-Content $KapowJumpCacheFile | Select-String $Dir)
 }
 
-Function Plugin-Jump-Set {
-  Add-Content $PluginJumpCacheFile -Value $pwd
+Function Kapow-Jump-Set {
+  Add-Content $KapowJumpCacheFile -Value $pwd
 }
 
-Function Plugin-Jump-List {
-  Get-Content $PluginJumpCacheFile
+Function Kapow-Jump-List {
+  Get-Content $KapowJumpCacheFile
 }

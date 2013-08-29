@@ -7,7 +7,7 @@
 #  choco <Tab>  Cycle through common Chocolatey commands.
 
 # Aliases
-Set-Alias choco            Plugin-Chocolatey-TabExpansion
+Set-Alias choco            Kapow-Chocolatey-TabExpansion
 Set-Alias ccygwin          ccygwin.bat
 Set-Alias cgem             cgem.bat
 Set-Alias chocolatey       chocolatey.bat
@@ -24,7 +24,7 @@ Set-Alias cwebpi           cwebpi.bat
 Set-Alias cwindowsfeatures cwindowsfeatures.bat
 
 # Functions
-Function Plugin-Chocolatey-TabExpansion {
+Function Kapow-Chocolatey-TabExpansion {
   Param([ValidateSet(
     "install", "installmissing", "update", "list", "help", "version",
     "webpi", "windowsfeatures", "gem", "uninstall")]

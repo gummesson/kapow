@@ -11,15 +11,15 @@
 $KapowCacheLwdFile = "$KapowCachePath\lwd"
 
 # Aliases
-Set-Alias lwd  Plugin-Lwd-Get
-Set-Alias quit Plugin-Lwd-Set
+Set-Alias lwd  Kapow-Lwd-Get
+Set-Alias quit Kapow-Lwd-Set
 
 # Functions
-Function Plugin-Lwd-Get {
+Function Kapow-Lwd-Get {
   Set-Location (Get-Content -Path $KapowCacheLwdFile)
 }
 
-Function Plugin-Lwd-Set {
+Function Kapow-Lwd-Set {
   Set-Content -Path $KapowCacheLwdFile -Value $pwd
   exit
 }

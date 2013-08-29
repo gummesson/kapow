@@ -6,17 +6,17 @@
 # Aliases
 Set-Alias touch     touch.exe
 Set-Alias clip      clip.exe
-Set-Alias time      Plugin-Utilities-Time
-Set-Alias psversion Plugin-Utilities-Version
+Set-Alias time      Kapow-Utilities-Time
+Set-Alias psversion Kapow-Utilities-Version
 
 # Functions
-Function Plugin-Utilities-Time {
+Function Kapow-Utilities-Time {
   Param($Cmd)
   Measure-Command {
     $Cmd
   }
 }
 
-Function Plugin-Utilities-Version {
+Function Kapow-Utilities-Version {
   $PSVersionTable.PsVersion
 }

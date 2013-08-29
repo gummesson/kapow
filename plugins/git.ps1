@@ -11,33 +11,33 @@ $env:TERM = 'cygwin'
 $env:LESS = 'FRSX'
 
 # Remove conflicting aliases
-$PluginGitConflicts = ("gc", "gi", "gl", "gm", "gp")
+$KapowGitConflicts = ("gc", "gi", "gl", "gm", "gp")
 
-Foreach ($Alias in $PluginGitConflicts) {
+Foreach ($Alias in $KapowGitConflicts) {
   Remove-Item alias:\$Alias -Force
 }
 
 # Aliases
-Set-Alias g     Plugin-Git-TabExpansion
-Set-Alias gst   Plugin-Git-Status
-Set-Alias gi    Plugin-Git-Init
-Set-Alias gd    Plugin-Git-Diff
-Set-Alias gl    Plugin-Git-Pull
-Set-Alias gp    Plugin-Git-Push
-Set-Alias ga    Plugin-Git-Add
-Set-Alias gc    Plugin-Git-Commit
-Set-Alias gcmsg Plugin-Git-CommitMessage
-Set-Alias gco   Plugin-Git-Checkout
-Set-Alias gm    Plugin-Git-Merge
-Set-Alias gb    Plugin-Git-Branch
-Set-Alias gr    Plugin-Git-Remote
-Set-Alias grb   Plugin-Git-Rebase
-set-Alias glo   Plugin-Git-Log
-set-Alias grh   Plugin-Git-ResetHead
-Set-Alias gcp   Plugin-Git-CherryPick
+Set-Alias g     Kapow-Git-TabExpansion
+Set-Alias gst   Kapow-Git-Status
+Set-Alias gi    Kapow-Git-Init
+Set-Alias gd    Kapow-Git-Diff
+Set-Alias gl    Kapow-Git-Pull
+Set-Alias gp    Kapow-Git-Push
+Set-Alias ga    Kapow-Git-Add
+Set-Alias gc    Kapow-Git-Commit
+Set-Alias gcmsg Kapow-Git-CommitMessage
+Set-Alias gco   Kapow-Git-Checkout
+Set-Alias gm    Kapow-Git-Merge
+Set-Alias gb    Kapow-Git-Branch
+Set-Alias gr    Kapow-Git-Remote
+Set-Alias grb   Kapow-Git-Rebase
+set-Alias glo   Kapow-Git-Log
+set-Alias grh   Kapow-Git-ResetHead
+Set-Alias gcp   Kapow-Git-CherryPick
 
 # Functions
-Function Plugin-Git-TabExpansion {
+Function Kapow-Git-TabExpansion {
   Param([ValidateSet(
     "add", "bisect", "branch", "checkout", "clone", "commit", "diff",
     "fetch", "grep", "help", "init", "log", "merge", "mv", "pull", "push",
@@ -46,66 +46,66 @@ Function Plugin-Git-TabExpansion {
   git $Cmd ($args -join "")
 }
 
-Function Plugin-Git-Status {
+Function Kapow-Git-Status {
   git status ($args -join " ")
 }
 
-Function Plugin-Git-Init {
+Function Kapow-Git-Init {
   git init ($args -join " ")
 }
 
-Function Plugin-Git-Diff {
+Function Kapow-Git-Diff {
   git diff ($args -join " ")
 }
 
-Function Plugin-Git-Pull {
+Function Kapow-Git-Pull {
   git pull ($args -join " ")
 }
 
-Function Plugin-Git-Push {
+Function Kapow-Git-Push {
   git push ($args -join " ")
 }
 
-Function Plugin-Git-Add {
+Function Kapow-Git-Add {
   git add ($args -join " ")
 }
 
-Function Plugin-Git-Commit {
+Function Kapow-Git-Commit {
   git commit ($args -join " ")
 }
 
-Function Plugin-Git-CommitMessage {
+Function Kapow-Git-CommitMessage {
   git commit -m ($args -join " ")
 }
 
-Function Plugin-Git-Checkout {
+Function Kapow-Git-Checkout {
   git checkout ($args -join " ")
 }
 
-Function Plugin-Git-Merge {
+Function Kapow-Git-Merge {
   git merge ($args -join " ")
 }
 
-Function Plugin-Git-Branch {
+Function Kapow-Git-Branch {
   git branch ($args -join " ")
 }
 
-Function Plugin-Git-Remote {
+Function Kapow-Git-Remote {
   git remote ($args -join " ")
 }
 
-Function Plugin-Git-Rebase {
+Function Kapow-Git-Rebase {
   git rebase ($args -join " ")
 }
 
-Function Plugin-Git-Log {
+Function Kapow-Git-Log {
   git log ($args -join " ")
 }
 
-Function Plugin-Git-ResetHead {
+Function Kapow-Git-ResetHead {
   git reset HEAD ($args -join " ")
 }
 
-Function Plugin-Git-CherryPick {
+Function Kapow-Git-CherryPick {
   git cherry-pick ($args -join " ")
 }

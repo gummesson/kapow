@@ -4,35 +4,35 @@
 #  For navigating in the filesystem.
 
 # Aliases
-Set-Alias ..     Plugin-Cd-UpOne
-Set-Alias ...    Plugin-Cd-UpTwo
-Set-Alias ....   Plugin-Cd-UpThree
-Set-Alias .....  Plugin-Cd-UpFour
-Set-Alias ...... Plugin-Cd-UpFive
-Set-Alias mkcd   Plugin-Cd-MkDir
+Set-Alias ..     Kapow-Cd-UpOne
+Set-Alias ...    Kapow-Cd-UpTwo
+Set-Alias ....   Kapow-Cd-UpThree
+Set-Alias .....  Kapow-Cd-UpFour
+Set-Alias ...... Kapow-Cd-UpFive
+Set-Alias mkcd   Kapow-Cd-MkDir
 
 # Functions
-Function Plugin-Cd-UpOne {
+Function Kapow-Cd-UpOne {
   Set-Location ../
 }
 
-Function Plugin-Cd-UpTwo {
+Function Kapow-Cd-UpTwo {
   Set-Location ../../
 }
 
-Function Plugin-Cd-UpThree {
+Function Kapow-Cd-UpThree {
   Set-Location ../../../
 }
 
-Function Plugin-Cd-UpFour {
+Function Kapow-Cd-UpFour {
   Set-Location ../../../../
 }
 
-Function Plugin-Cd-UpFive {
+Function Kapow-Cd-UpFive {
   Set-Location ../../../../../
 }
 
-Function Plugin-Cd-MkDir {
+Function Kapow-Cd-MkDir {
   Param($Path)
   New-Item -Path $Path -ItemType directory > $null
   Set-Location $Path

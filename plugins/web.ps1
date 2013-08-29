@@ -4,10 +4,10 @@
 #  For running various web based commands.
 
 # Aliases
-Set-Alias goo Plugin-Web-SearchGoogle
+Set-Alias goo Kapow-Web-SearchGoogle
 
 # Functions
-Function Plugin-Web-SearchGoogle {
+Function Kapow-Web-SearchGoogle {
   Param($Term)
   Start-Process "http://www.google.com/search?q=$Term"
 }
