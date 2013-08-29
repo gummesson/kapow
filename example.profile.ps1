@@ -1,14 +1,14 @@
 # ~ Kapow! ~
-# Setup file
 
 # Default settings
 $KapowDefaultPath = "C:\Git\kapow"
-$KapowPromptTheme = "simple"
-$KapowUserPlugins = ("cd", "docs", "edit", "list", "utils")
+$KapowDefaultHome = "C:\"
+$KapowDefaultTheme = "simple"
 $KapowDefaultEditor = "gvim"
+$KapowDefaultPlugins = ("cd", "docs", "edit", "list", "utils")
 
 # Customize the prompt
-. $KapowDefaultPath\themes\$KapowPromptTheme.ps1
+. $KapowDefaultPath\themes\$KapowDefaultTheme.ps1
 
 # Source the Kapow! lib file
 . $KapowDefaultPath\lib\kapow.ps1
