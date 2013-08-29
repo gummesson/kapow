@@ -30,13 +30,15 @@ If you haven't got a `Microsoft.PowerShell_profile.ps1` file in your `C:\Users\U
 
 If you have a `Microsoft.PowerShell_profile.ps1` file in your `C:\Users\USERNAME\Documents\WindowsPowerShell` folder you need to copy the content of the `example.profile.ps1` and paste it into the your `Microsoft.PowerShell_profile.ps1` file.
 
-### Set the Kapow! path
+### Set your default settings
 
-The next step is to set the `$KapowDefaultPath` variable to point to the right folder in the `Microsoft.PowerShell_profile.ps1` file. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder.
+The next step is to set the `$KapowDefaultPath` variable to point to the right folder in the `Microsoft.PowerShell_profile.ps1` file. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder!
 
-### Set which plugins to use
+Change the `$KapowDefaultHome` if you're planning on using a theme that's replacing your "home" folder with a tilde (`~`) and set the default prompt theme by changing the `$KapowDefaultTheme` variable.
 
-The last thing you need to do is to choose which plugins to use. Look around in the `plugins` and then add them to the `$KapowUserPlugins` array in the `Microsoft.PowerShell_profile.ps1` file and you're done!
+The `$KapowDefaultEditor` variable is primarily used in the `edit` plugin, so if you're not planning to use it you don't need to change it.
+
+The last thing you need to do is to choose which plugins to use. Look around in the `plugins` and then add them to the `$KapowDefaultPlugins` array in the `Microsoft.PowerShell_profile.ps1` file and you're done!
 
 ### Optional: install a better console
 
@@ -51,6 +53,10 @@ The look of the PowerShell itself leaves a lot to be desired. If you want a more
 ### Crunchy theme
 
 ![Crunchy theme](http://i.imgur.com/dRL5iHK.png)
+
+### Crunchier theme
+
+![Crunchier theme](http://i.imgur.com/CX4bVSq.png)
 
 ### Inon theme
 
