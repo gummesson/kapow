@@ -1,5 +1,4 @@
 # ~ Kapow! ~
-# A punchy PowerShell framework
 
 # Set additional paths
 $KapowCachePath = "$HOME\Documents\WindowsPowerShell\cache"
