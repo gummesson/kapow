@@ -12,7 +12,6 @@ The PowerShell needs some love. Seriously.
 - Useful scripts
 - Tab completion *(requires PowerShell 3.0)*
 - Colorful themes
-- Simple documentation
 
 ## Prerequisites
 

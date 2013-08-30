@@ -1,8 +1,0 @@
-
- ~ Kapow ~
-
- Jump plugin
-
- j [DIRECTORY]  Jump to the specified directory
- jm             Mark the current directory
- jl             List the marked directories
