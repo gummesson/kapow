@@ -13,7 +13,13 @@ Set-Alias jkl Kapow-Jekyll-TabExpansion
 Function Kapow-Jekyll-TabExpansion {
   Param(
     [ValidateSet(
-      "build", "docs", "doctor", "help", "import", "new", "serve")]
+      "build",
+      "docs",
+      "doctor",
+      "help",
+      "import",
+      "new",
+      "serve")]
     [string]$Command
   )
   jekyll $Command $Args

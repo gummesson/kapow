@@ -15,9 +15,24 @@ Set-Alias cmpsw Kapow-Compass-Watch
 Function Kapow-Compass-TabExpansion {
   Param(
     [ValidateSet(
-      "clean", "compile", "config", "create", "extension" ,"framework",
-      "grid-img", "help", "imports", "init", "install", "interactive",
-      "sprite", "stats", "unpack", "validate", "version", "watch")]
+      "clean",
+      "compile",
+      "config",
+      "create",
+      "extension"
+      ,"framework",
+      "grid-img",
+      "help",
+      "imports",
+      "init",
+      "install",
+      "interactive",
+      "sprite",
+      "stats",
+      "unpack",
+      "validate",
+      "version",
+      "watch")]
     [string]$Command
   )
   compass $Command $Args
