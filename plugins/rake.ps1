@@ -9,7 +9,12 @@
 
 # Functions
 Function TabExpansion {
-  Param($Line, $Cmd)
+  Param(
+    [Parameter(Position = 0)]
+    [string]$Line,
+    [Parameter(Position = 1)]
+    [string]$Cmd
+  )
   If ($Line -match "rake") {
     rake -T | ForEach { 
       If ($_ -match "^rake ($Cmd\S*)" ) { Return $matches[1] }

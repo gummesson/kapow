@@ -11,10 +11,12 @@ Set-Alias rgm Kapow-RubyGems-TabExpansion
 
 # Functions
 Function Kapow-RubyGems-TabExpansion {
-  Param([ValidateSet(
-    "build", "cert", "check", "cleanup", "contents", "dependency",
-    "environment", "help", "install", "list", "query", "rdoc",
-    "search", "specification", "uninstall", "unpack", "update", "which")]
-  $Cmd)
+  Param(
+    [ValidateSet(
+      "build", "cert", "check", "cleanup", "contents", "dependency",
+      "environment", "help", "install", "list", "query", "rdoc",
+      "search", "specification", "uninstall", "unpack", "update", "which")]
+    [string]$Cmd
+  )
   gem $Cmd ($args -join "")
 }

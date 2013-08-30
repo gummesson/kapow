@@ -22,7 +22,10 @@ Set-Alias jl Kapow-Jump-List
 
 # Functions
 Function Kapow-Jump-Get {
-  Param($Dir)
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [string]$Dir
+  )
   Set-Location (Get-Content $KapowJumpCacheFile | Select-String $Dir)
 }
 

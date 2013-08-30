@@ -19,12 +19,20 @@ Function Kapow-List-Files {
 }
 
 Function Kapow-List-FindFiles { 
-  Param($Type)
+  Param(
+    [Parameter(Position = 0)]
+    [string]$Type = "*.*"
+  )
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
 Function Kapow-List-FindInside { 
-  Param($Type, $Term)
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [string]$Type,
+    [Parameter(Position = 1, Mandatory=$true)]
+    [string]$Term
+  )
   Get-ChildItem -Recurse -Include $Type | Select-String $Term | ForEach {
     (($_ -split ":\s+") -join ":")
   }

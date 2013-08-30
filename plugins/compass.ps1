@@ -13,11 +13,13 @@ Set-Alias cmpsw Kapow-Compass-Watch
 
 # Functions
 Function Kapow-Compass-TabExpansion {
-  Param([ValidateSet(
-    "clean", "compile", "config", "create", "extension" ,"framework",
-    "grid-img", "help", "imports", "init", "install", "interactive",
-    "sprite", "stats", "unpack", "validate", "version", "watch")]
-  $Cmd)
+  Param(
+    [ValidateSet(
+      "clean", "compile", "config", "create", "extension" ,"framework",
+      "grid-img", "help", "imports", "init", "install", "interactive",
+      "sprite", "stats", "unpack", "validate", "version", "watch")]
+    [string]$Cmd
+  )
   compass $Cmd ($args -join "")
 }
 

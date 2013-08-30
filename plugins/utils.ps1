@@ -11,12 +11,15 @@ Set-Alias psversion Kapow-Utilities-Version
 
 # Functions
 Function Kapow-Utilities-Time {
-  Param($Cmd)
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [string]$Cmd
+  )
   Measure-Command {
     $Cmd
   }
 }
 
 Function Kapow-Utilities-Version {
-  $PSVersionTable.PsVersion
+  Return $PSVersionTable.PsVersion
 }

@@ -8,6 +8,9 @@ Set-Alias edit Kapow-Edit-File
 
 # Functions
 Function Kapow-Edit-File {
-  Param($File)
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [string]$File
+  )
   Invoke-Expression "$KapowDefaultEditor $File"
 }

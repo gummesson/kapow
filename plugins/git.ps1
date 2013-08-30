@@ -38,11 +38,13 @@ Set-Alias gcp   Kapow-Git-CherryPick
 
 # Functions
 Function Kapow-Git-TabExpansion {
-  Param([ValidateSet(
-    "add", "bisect", "branch", "checkout", "clone", "commit", "diff",
-    "fetch", "grep", "help", "init", "log", "merge", "mv", "pull", "push",
-    "rebase", "reset", "rm", "show", "status", "tag")]
-  $Cmd)
+  Param(
+    [ValidateSet(
+      "add", "bisect", "branch", "checkout", "clone", "commit", "diff",
+      "fetch", "grep", "help", "init", "log", "merge", "mv", "pull", "push",
+      "rebase", "reset", "rm", "show", "status", "tag")]
+    [string]$Cmd
+  )
   git $Cmd ($args -join "")
 }
 
