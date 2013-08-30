@@ -7,7 +7,7 @@
 #  lwd   Go to the last working directory
 #  quit  Save the last working directory and exit
 
-# The cache file 
+# The cache file
 $KapowCacheLwdFile = "$KapowCachePath\lwd"
 
 # Aliases

@@ -1,7 +1,7 @@
 # ~ Kapow! ~
 #
 # Rake plugin
-#  For enabling case-by-case tab expansion for Rake tasks 
+#  For enabling case-by-case tab expansion for Rake tasks
 #  inside a project's root directory.
 #
 # Usage:
@@ -16,7 +16,7 @@ Function TabExpansion {
     [string]$Task
   )
   If ($Line -match "rake") {
-    rake -T | ForEach { 
+    rake -T | ForEach {
       If ($_ -match "^rake ($Task\S*)" ) {
         Return $matches[1]
       }

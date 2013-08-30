@@ -18,7 +18,7 @@ Function Kapow-List-Files {
   Get-ChildItem -Name
 }
 
-Function Kapow-List-FindFiles { 
+Function Kapow-List-FindFiles {
   Param(
     [Parameter(Position = 0)]
     [alias("t")]
@@ -27,7 +27,7 @@ Function Kapow-List-FindFiles {
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
-Function Kapow-List-FindInside { 
+Function Kapow-List-FindInside {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [string]$Type,
