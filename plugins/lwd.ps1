@@ -1,7 +1,7 @@
 # ~ Kapow! ~
 #
 # Last working directory plugin
-#  For navigating to and saving the last working directory
+#  For navigating to and saving the last working directory.
 #
 # Usage:
 #  lwd   Go to the last working directory
