@@ -27,8 +27,16 @@ Set-Alias cwindowsfeatures cwindowsfeatures.bat
 Function Kapow-Chocolatey-TabExpansion {
   Param(
     [ValidateSet(
-      "install", "installmissing", "update", "list", "help", "version",
-      "webpi", "windowsfeatures", "gem", "uninstall")]
+      "install",
+      "installmissing",
+      "update",
+      "list",
+      "help",
+      "version",
+      "webpi",
+      "windowsfeatures",
+      "gem",
+      "uninstall")]
     [string]$Command
   )
   chocolatey $Command $Args
