@@ -31,5 +31,5 @@ Function Kapow-Chocolatey-TabExpansion {
       "webpi", "windowsfeatures", "gem", "uninstall")]
     [string]$Command
   )
-  chocolatey $Command ($args -join "")
+  chocolatey $Command $Args
 }

@@ -18,5 +18,5 @@ Function Kapow-RubyGems-TabExpansion {
       "search", "specification", "uninstall", "unpack", "update", "which")]
     [string]$Command
   )
-  gem $Command ($args -join "")
+  gem $Command $Args
 }

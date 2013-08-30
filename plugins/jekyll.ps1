@@ -16,5 +16,5 @@ Function Kapow-Jekyll-TabExpansion {
       "build", "docs", "doctor", "help", "import", "new", "serve")]
     [string]$Command
   )
-  jekyll $Command ($args -join "")
+  jekyll $Command $Args
 }

@@ -45,69 +45,69 @@ Function Kapow-Git-TabExpansion {
       "rebase", "reset", "rm", "show", "status", "tag")]
     [string]$Command
   )
-  git $Command ($args -join "")
+  git $Command $Args
 }
 
 Function Kapow-Git-Status {
-  git status ($args -join " ")
+  git status $Args
 }
 
 Function Kapow-Git-Init {
-  git init ($args -join " ")
+  git init $Args
 }
 
 Function Kapow-Git-Diff {
-  git diff ($args -join " ")
+  git diff $Args
 }
 
 Function Kapow-Git-Pull {
-  git pull ($args -join " ")
+  git pull $Args
 }
 
 Function Kapow-Git-Push {
-  git push ($args -join " ")
+  git push $Args
 }
 
 Function Kapow-Git-Add {
-  git add ($args -join " ")
+  git add $Args
 }
 
 Function Kapow-Git-Commit {
-  git commit ($args -join " ")
+  git commit $Args
 }
 
 Function Kapow-Git-CommitMessage {
-  git commit -m ($args -join " ")
+  git commit -m $Args
 }
 
 Function Kapow-Git-Checkout {
-  git checkout ($args -join " ")
+  git checkout $Args
 }
 
 Function Kapow-Git-Merge {
-  git merge ($args -join " ")
+  git merge $Args
 }
 
 Function Kapow-Git-Branch {
-  git branch ($args -join " ")
+  git branch $Args
 }
 
 Function Kapow-Git-Remote {
-  git remote ($args -join " ")
+  git remote $Args
 }
 
 Function Kapow-Git-Rebase {
-  git rebase ($args -join " ")
+  git rebase $Args
 }
 
 Function Kapow-Git-Log {
-  git log ($args -join " ")
+  git log $Args
 }
 
 Function Kapow-Git-ResetHead {
-  git reset HEAD ($args -join " ")
+  git reset HEAD $Args
 }
 
 Function Kapow-Git-CherryPick {
-  git cherry-pick ($args -join " ")
+  git cherry-pick $Args
 }

@@ -13,11 +13,11 @@ Function TabExpansion {
     [Parameter(Position = 0)]
     [string]$Line,
     [Parameter(Position = 1)]
-    [string]$Command
+    [string]$Task
   )
   If ($Line -match "rake") {
     rake -T | ForEach { 
-      If ($_ -match "^rake ($Command\S*)" ) {
+      If ($_ -match "^rake ($Task\S*)" ) {
         Return $matches[1]
       }
     }

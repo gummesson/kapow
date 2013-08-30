@@ -20,13 +20,13 @@ Function Kapow-Compass-TabExpansion {
       "sprite", "stats", "unpack", "validate", "version", "watch")]
     [string]$Command
   )
-  compass $Command ($args -join "")
+  compass $Command $Args
 }
 
 Function Kapow-Compass-Compile {
-  compass compile ($args -join "") 
+  compass compile $Args
 }
 
 Function Kapow-Compass-Watch {
-  compass watch ($args -join "") 
+  compass watch $Args
 }
