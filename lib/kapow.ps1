@@ -12,7 +12,8 @@ ForEach ($Plugin in $KapowDefaultPlugins) {
 
 # Import custom plugins
 If (Test-Path -Path $KapowCustomPath) {
-  Get-ChildItem -Path $KapowCustomPath -Name -Include "*.ps1" | ForEach { 
+  Get-ChildItem -Path $KapowCustomPath -Name -Include "*.ps1" |
+  ForEach { 
     . "$KapowCustomPath\$_"
   }
 }

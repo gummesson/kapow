@@ -13,6 +13,7 @@ If ($PSVersionTable.PSVersion.Major -eq 3) {
       [ValidateSet(
         "cd", "chocolatey","compass", "edit", "git", "jekyll", "jump",
         "list", "lwd", "rubygems", "tab", "utils", "web")]
+      [alias("d")]
       [string]$Document
     )
     more "$KapowDocsPath\$Document"
@@ -21,6 +22,7 @@ If ($PSVersionTable.PSVersion.Major -eq 3) {
   Function Kapow-Docs {
     Param(
       [Parameter(Position = 0, Mandatory=$true)]
+      [alias("d")]
       [string]$Document
     )
     more "$KapowDocsPath\$Document"
