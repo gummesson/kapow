@@ -8,7 +8,7 @@ $KapowDefaultEditor = "gvim"
 $KapowDefaultPlugins = ("cd", "docs", "edit", "list", "utils")
 
 # Customize the prompt
-. $KapowDefaultPath\themes\$KapowDefaultTheme.ps1
+. "$KapowDefaultPath\themes\$KapowDefaultTheme.ps1"
 
 # Source the Kapow! lib file
-. $KapowDefaultPath\lib\kapow.ps1
+. "$KapowDefaultPath\lib\kapow.ps1"
