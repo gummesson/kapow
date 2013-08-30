@@ -50,27 +50,27 @@ The look of the PowerShell itself leaves a lot to be desired. If you want a more
 
 ### Bashlet theme
 
-![Bashlet theme](http://i.imgur.com/6zjhu2H.png)
+![Bashlet theme](http://i.imgur.com/TIygWlS.png)
 
 ### Crunchy theme
 
-![Crunchy theme](http://i.imgur.com/5nSATFK.png)
+![Crunchy theme](http://i.imgur.com/O0yMuPa.png)
 
 ### Crunchier theme
 
-![Crunchier theme](http://i.imgur.com/IvYt3YJ.png)
+![Crunchier theme](http://i.imgur.com/XLAxWKd.png)
 
 ### Inon theme
 
-![Inon theme](http://i.imgur.com/3Tt0PYe.png)
+![Inon theme](http://i.imgur.com/VmXM43I.png)
 
 ### Punchy theme
 
-![Punchy theme](http://i.imgur.com/iQcMTcl.png)
+![Punchy theme](http://i.imgur.com/qnifdjq.png)
 
 ### Simple theme
 
-![Simple theme](http://i.imgur.com/Xu01urU.png)
+![Simple theme](http://i.imgur.com/yh4DIM7.png)
 
 ## Acknowledgements
 
