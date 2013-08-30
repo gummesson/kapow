@@ -29,7 +29,7 @@ Function Kapow-Chocolatey-TabExpansion {
     [ValidateSet(
       "install", "installmissing", "update", "list", "help", "version",
       "webpi", "windowsfeatures", "gem", "uninstall")]
-    [string]$Cmd
+    [string]$Command
   )
-  chocolatey.bat $Cmd ($args -join "")
+  chocolatey $Command ($args -join "")
 }

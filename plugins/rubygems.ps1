@@ -16,7 +16,7 @@ Function Kapow-RubyGems-TabExpansion {
       "build", "cert", "check", "cleanup", "contents", "dependency",
       "environment", "help", "install", "list", "query", "rdoc",
       "search", "specification", "uninstall", "unpack", "update", "which")]
-    [string]$Cmd
+    [string]$Command
   )
-  gem $Cmd ($args -join "")
+  gem $Command ($args -join "")
 }

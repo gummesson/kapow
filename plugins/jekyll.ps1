@@ -14,7 +14,7 @@ Function Kapow-Jekyll-TabExpansion {
   Param(
     [ValidateSet(
       "build", "docs", "doctor", "help", "import", "new", "serve")]
-    [string]$Cmd
+    [string]$Command
   )
-  jekyll $Cmd ($args -join "")
+  jekyll $Command ($args -join "")
 }

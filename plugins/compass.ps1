@@ -18,9 +18,9 @@ Function Kapow-Compass-TabExpansion {
       "clean", "compile", "config", "create", "extension" ,"framework",
       "grid-img", "help", "imports", "init", "install", "interactive",
       "sprite", "stats", "unpack", "validate", "version", "watch")]
-    [string]$Cmd
+    [string]$Command
   )
-  compass $Cmd ($args -join "")
+  compass $Command ($args -join "")
 }
 
 Function Kapow-Compass-Compile {
