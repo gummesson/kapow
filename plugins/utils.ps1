@@ -22,5 +22,5 @@ Function Kapow-Utilities-Time {
 }
 
 Function Kapow-Utilities-Version {
-  Return $PSVersionTable.PsVersion
+  Return $PSVersionTable.PsVersion.toString()
 }
