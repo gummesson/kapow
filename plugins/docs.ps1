@@ -13,16 +13,16 @@ If ($PSVersionTable.PSVersion.Major -eq 3) {
       [ValidateSet(
         "cd", "chocolatey","compass", "edit", "git", "jekyll", "jump",
         "list", "lwd", "rubygems", "tab", "utils", "web")]
-      [string]$Doc
+      [string]$Document
     )
-    more "$KapowDocsPath\$Doc"
+    more "$KapowDocsPath\$Document"
   }
 } Else {
   Function Kapow-Docs {
     Param(
       [Parameter(Position = 0, Mandatory=$true)]
-      [string]$Doc
+      [string]$Document
     )
-    more "$KapowDocsPath\$Doc"
+    more "$KapowDocsPath\$Document"
   }
 }

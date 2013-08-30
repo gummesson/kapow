@@ -13,10 +13,11 @@ Set-Alias psversion Kapow-Utilities-Version
 Function Kapow-Utilities-Time {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
-    [string]$Cmd
+    [alias("c")]
+    [string]$Command
   )
   Measure-Command {
-    $Cmd
+    $Command
   }
 }
 

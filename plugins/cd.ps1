@@ -35,6 +35,7 @@ Function Kapow-Cd-UpFive {
 Function Kapow-Cd-MkDir {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
+    [alias("p")]
     [string]$Path
   )
   New-Item -Path $Path -ItemType directory > $null
