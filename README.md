@@ -16,6 +16,8 @@ The PowerShell needs some love. Seriously.
 
 ## Prerequisites
 
+Kapow! requires atleast PowerShell 2.0 in order to run. You can find out which version you're using by running `$PSVersionTable.PsVersion`.
+
 Some of the plugins remove default aliases for certain PowerShell tasks, like `gl` for `Get-Location` in the `git` plugin. If you're a "casual" user of the PowerShell, ie. you use it for working with Git, to run a few RubyGems and so forth, it'll probably won't affect you, but be aware of it.
 
 ## Installation
