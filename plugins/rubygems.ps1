@@ -4,7 +4,7 @@
 #   For working with RubyGems.
 #
 #  Usage:
-#   rgm <Tab>  Cycle through common RubyGems commands
+#   rgm <Tab>  Cycle through common RubyGems commands.
 #
 # ==============================================================================
 

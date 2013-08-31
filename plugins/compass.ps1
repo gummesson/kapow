@@ -4,7 +4,7 @@
 #   For working with Compass.
 #
 #  Usage:
-#   cmps <Tab>  Cycle through common Compass commands
+#   cmps <Tab>  Cycle through common Compass commands.
 #
 # ==============================================================================
 

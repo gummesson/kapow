@@ -5,7 +5,7 @@
 #   inside a project's root directory.
 #
 #  Usage:
-#   rake <Tab>  Cycle through the specific tasks of the project
+#   rake <Tab>  Cycle through the specific tasks of the project.
 #
 # ==============================================================================
 

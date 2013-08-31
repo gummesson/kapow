@@ -3,6 +3,9 @@
 #  Web plugin
 #   For running various web based commands.
 #
+#  Usage:
+#   goo [SEARCH TERM]  Search after a specific term on Google.
+#
 # ==============================================================================
 
 # == Aliases ===================================================================

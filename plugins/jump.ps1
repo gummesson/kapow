@@ -4,9 +4,9 @@
 #   For "jumping" to a "marked" directory in the filesystem.
 #
 #  Usage:
-#   j my-project        Jump to the desired directory
-#   jm another-project  Mark the current directory
-#   jl                  List the marked directories
+#   j my-project        Jump to the desired directory.
+#   jm another-project  Mark the current directory.
+#   jl                  List the marked directories.
 #
 # ==============================================================================
 

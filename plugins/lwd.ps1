@@ -4,8 +4,8 @@
 #   For navigating to and saving the last working directory.
 #
 #  Usage:
-#   lwd   Go to the last working directory
-#   quit  Save the last working directory and exit
+#   lwd   Go to the last working directory.
+#   quit  Save the last working directory and exit.
 #
 # ==============================================================================
 

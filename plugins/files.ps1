@@ -4,9 +4,9 @@
 #   For working with files.
 #
 #  Usage:
-#   fcd        List all files and folders in the current directory
-#   ff *.md    List all files with the specified extension
-#   fs "word"  List all files that contains the specified string
+#   fcd               List all files and folders in the current directory.
+#   ff [EXTENSION]    List all files with the specified extension.
+#   fs [SEARCH TERM]  List all files that contains the specified string.
 #
 # ==============================================================================
 

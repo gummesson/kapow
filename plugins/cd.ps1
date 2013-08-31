@@ -4,7 +4,7 @@
 #   For navigating in the filesystem.
 #
 #  Usage:
-#   mkcd [DIRECTORY]  Create a new directory and navigate in to it
+#   mkcd [DIRECTORY]  Create a new directory and navigate in to it.
 #
 # ==============================================================================
 
