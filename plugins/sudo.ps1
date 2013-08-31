@@ -1,0 +1,19 @@
+# == Kapow! ====================================================================
+#
+#  Sudo plugin
+#   For running an application as an administrator.
+#
+# ==============================================================================
+
+# == Aliases ===================================================================
+
+Set-Alias sudo Start-AsSudo
+
+# == Functions =================================================================
+
+Function Start-AsSudo {
+  Param([Parameter(Position = 0, Mandatory=$true)]
+        [alias("a")]
+        [string]$Application)
+  Start-Process $Application -Verb "runAs" 
+}
