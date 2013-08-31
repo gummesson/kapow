@@ -21,7 +21,7 @@ Kapow! requires atleast PowerShell 2.0 in order to run. You can find out which v
 
 ### Set up the PowerShell
 
-First you need to make sure that you can actually execute scripts by running `Get-ExecutionPolicy` in the PowerShell. If the output doesn't say `RemoteSigned` or `Unrestricted` you need to run the PowerShell as an *Administrator* and execute the following command: `Set-ExecutionPolicy RemoteSigned`. This will grant the current user the permission to run scripts.
+First you need to make sure that you can actually execute scripts by running `Get-ExecutionPolicy` in the PowerShell. If the output doesn't say `RemoteSigned` or `Unrestricted` you need to run the PowerShell as an *Administrator* and execute the following command: `Set-ExecutionPolicy RemoteSigned`.
 
 ### Install Kapow!
 
@@ -29,7 +29,7 @@ Run the `ìnstall.ps1` script by executing the following command: `.\install.ps1
 
 ### Set your default settings
 
-The next step is to set the `$KapowDefaultPath` variable to point to the right folder in the `Kapow.psm1` file. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder!
+The next step is to set the `$KapowDefaultPath` variable in the `Kapow.psm1` file to point to the right folder. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder!
 
 Change the `$KapowDefaultHome` if you're planning on using a theme that's replacing your "home" folder with a tilde (`~`) and set the default prompt theme by changing the `$KapowDefaultTheme` variable.
 
