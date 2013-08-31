@@ -11,5 +11,5 @@ md .\cache > $null
 cp "Kapow.psm1" "$KapowModulePath\Kapow.psm1" > $null
 
 # Display the installation message
-Write-Host "Kapow!" -ForegroundColor Green 
+Write-Host "Kapow!" -ForegroundColor Green
 Write-Host "Installation completed!"

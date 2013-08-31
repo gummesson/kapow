@@ -7,7 +7,7 @@
 
 # == Functions =================================================================
 
-Function Prompt { 
+Function Prompt {
   Write-Host "$pwd" -NoNewline
   Write-Host ">" -NoNewline
   Return " "

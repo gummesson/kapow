@@ -13,7 +13,7 @@ Function Prompt {
   Write-Host "@" -NoNewline
   Write-Host "$env:computername" -NoNewline -ForegroundColor Red
   Write-Host " " -NoNewline
-  Write-Host $(Set-HomeDirectory("$pwd")) -ForegroundColor Yellow 
+  Write-Host $(Set-HomeDirectory("$pwd")) -ForegroundColor Yellow
   Write-Host "$" -NoNewline
   Return " "
 }
