@@ -1,4 +1,4 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
 #
 # Jump plugin
 #  For "jumping" to a "marked" directory in the filesystem.
@@ -8,32 +8,34 @@
 #  jm another-project  Mark the current directory
 #  jl                  List the marked directories
 
-# The cache file
-$KapowJumpCacheFile = "$KapowCachePath\jumps"
+# == Aliases ===================================================================
 
-If (-Not (Test-Path -Path $KapowJumpCacheFile)) {
-  New-Item -Path $KapowJumpCacheFile -ItemType file > $null
-}
-
-# Aliases
 Set-Alias j  Get-Jump
 Set-Alias jm Set-Jump
 Set-Alias jl Get-AllJumps
 
-# Functions
+# == Configuration =============================================================
+
+# The cache file
+$KapowJumpCacheFile = "$KapowCachePath\jumps"
+
+If (-Not (Test-Path -Path "$KapowJumpCacheFile")) {
+  New-Item -Path "$KapowJumpCacheFile" -ItemType file > $null
+}
+
+# == Functions =================================================================
+
 Function Get-Jump {
-  Param(
-    [Parameter(Position = 0, Mandatory=$true)]
-    [alias("d")]
-    [string]$Dir
-  )
-  Set-Location (Get-Content $KapowJumpCacheFile | Select-String $Dir)
+  Param([Parameter(Position = 0, Mandatory=$true)]
+        [alias("d")]
+        [string]$Dir)
+  Set-Location (Get-Content "$KapowJumpCacheFile" | Select-String "$Dir")
 }
 
 Function Set-Jump {
-  Add-Content $KapowJumpCacheFile -Value $pwd
+  Add-Content "$KapowJumpCacheFile" -Value $pwd
 }
 
 Function Get-AllJumps {
-  Get-Content $KapowJumpCacheFile
+  Get-Content "$KapowJumpCacheFile"
 }

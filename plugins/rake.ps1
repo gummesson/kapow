@@ -1,4 +1,4 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
 #
 # Rake plugin
 #  For enabling case-by-case tab expansion for Rake tasks
@@ -7,19 +7,16 @@
 # Usage:
 #  rake <Tab>  Cycle through the specific tasks of the project.
 
-# Functions
+# == Functions =================================================================
+
 Function TabExpansion {
-  Param(
-    [Parameter(Position = 0)]
-    [string]$Line,
-    [Parameter(Position = 1)]
-    [string]$Task
-  )
+  Param([Parameter(Position = 0)]
+        [string]$Line,
+        [Parameter(Position = 1)]
+        [string]$Task)
   If ($Line -match "rake") {
     rake -T | ForEach {
-      If ($_ -match "^rake ($Task\S*)" ) {
-        Return $matches[1]
-      }
+      If ($_ -match "^rake ($Task\S*)" ) { Return $matches[1] }
     }
   }
 }

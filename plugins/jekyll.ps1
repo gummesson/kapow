@@ -1,4 +1,4 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
 #
 # Jekyll plugin
 #  For working with Jekyll.
@@ -6,21 +6,21 @@
 # Usage:
 #  jkl <Tab>  Cycle through common Jekyll commands.
 
-# Aliases
+# == Aliases ===================================================================
+
 Set-Alias jkl Enable-JekyllTabExpansion
 
-# Functions
+# == Functions =================================================================
+
 Function Enable-JekyllTabExpansion {
-  Param(
-    [ValidateSet(
-      "build",
-      "docs",
-      "doctor",
-      "help",
-      "import",
-      "new",
-      "serve")]
-    [string]$Command
-  )
+  Param([ValidateSet(
+          "build",
+          "docs",
+          "doctor",
+          "help",
+          "import",
+          "new",
+          "serve")]
+        [string]$Command)
   jekyll $Command $Args
 }

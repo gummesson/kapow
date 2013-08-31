@@ -1,47 +1,42 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
 #
-#  Compass plugin
+# Compass plugin
 #  For working with Compass.
 #
 # Usage:
 #  cmps <Tab>  Cycle through common Compass commands.
 
-# Aliases
+# == Aliases ===================================================================
+
 Set-Alias cmps  Enable-CompassTabExpansion
 Set-Alias cmpsc Send-CompassCompile
 Set-Alias cmpsw Send-CompassWatch
 
-# Functions
+# == Functions =================================================================
+
 Function Enable-CompassTabExpansion {
-  Param(
-    [ValidateSet(
-      "clean",
-      "compile",
-      "config",
-      "create",
-      "extension"
-      ,"framework",
-      "grid-img",
-      "help",
-      "imports",
-      "init",
-      "install",
-      "interactive",
-      "sprite",
-      "stats",
-      "unpack",
-      "validate",
-      "version",
-      "watch")]
-    [string]$Command
-  )
+  Param([ValidateSet(
+          "clean",
+          "compile",
+          "config",
+          "create",
+          "extension",
+          "framework",
+          "grid-img",
+          "help",
+          "imports",
+          "init",
+          "install",
+          "interactive",
+          "sprite",
+          "stats",
+          "unpack",
+          "validate",
+          "version",
+          "watch")]
+        [string]$Command)
   compass $Command $Args
 }
 
-Function Send-CompassCompile {
-  compass compile $Args
-}
-
-Function Send-CompassWatch {
-  compass watch $Args
-}
+Function Send-CompassCompile { compass compile $Args }
+Function Send-CompassWatch { compass watch $Args }
