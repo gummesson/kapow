@@ -4,13 +4,13 @@
 #  For running various web based commands.
 
 # Aliases
-Set-Alias goo Kapow-Web-SearchGoogle
+Set-Alias goo Search-Google
 
 # Functions
-Function Kapow-Web-SearchGoogle {
+Function Search-Google {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
-    [string]$Term
+    [string]$SearchTerm
   )
-  Start-Process "http://www.google.com/search?q=$Term"
+  Start-Process "http://www.google.com/search?q=$SearchTerm"
 }

@@ -6,11 +6,11 @@
 # Aliases
 Set-Alias touch     touch.exe
 Set-Alias clip      clip.exe
-Set-Alias time      Kapow-Utilities-Time
-Set-Alias psversion Kapow-Utilities-Version
+Set-Alias time      Measure-Time
+Set-Alias psversion Get-Version
 
 # Functions
-Function Kapow-Utilities-Time {
+Function Measure-Time {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [alias("c")]
@@ -21,6 +21,6 @@ Function Kapow-Utilities-Time {
   }
 }
 
-Function Kapow-Utilities-Version {
-  Return $PSVersionTable.PsVersion.toString()
+Function Get-Version {
+  Return "PowerShell: $($PSVersionTable.PsVersion.toString())"
 }
