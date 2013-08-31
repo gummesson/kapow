@@ -7,12 +7,12 @@
 #  cmps <Tab>  Cycle through common Compass commands.
 
 # Aliases
-Set-Alias cmps  Kapow-Compass-TabExpansion
-Set-Alias cmpsc Kapow-Compass-Compile
-Set-Alias cmpsw Kapow-Compass-Watch
+Set-Alias cmps  Enable-CompassTabExpansion
+Set-Alias cmpsc Send-CompassCompile
+Set-Alias cmpsw Send-CompassWatch
 
 # Functions
-Function Kapow-Compass-TabExpansion {
+Function Enable-CompassTabExpansion {
   Param(
     [ValidateSet(
       "clean",
@@ -38,10 +38,10 @@ Function Kapow-Compass-TabExpansion {
   compass $Command $Args
 }
 
-Function Kapow-Compass-Compile {
+Function Send-CompassCompile {
   compass compile $Args
 }
 
-Function Kapow-Compass-Watch {
+Function Send-CompassWatch {
   compass watch $Args
 }

@@ -18,26 +18,26 @@ ForEach ($Alias in $KapowGitConflicts) {
 }
 
 # Aliases
-Set-Alias g     Kapow-Git-TabExpansion
-Set-Alias gst   Kapow-Git-Status
-Set-Alias gi    Kapow-Git-Init
-Set-Alias gd    Kapow-Git-Diff
-Set-Alias gl    Kapow-Git-Pull
-Set-Alias gp    Kapow-Git-Push
-Set-Alias ga    Kapow-Git-Add
-Set-Alias gc    Kapow-Git-Commit
-Set-Alias gcmsg Kapow-Git-CommitMessage
-Set-Alias gco   Kapow-Git-Checkout
-Set-Alias gm    Kapow-Git-Merge
-Set-Alias gb    Kapow-Git-Branch
-Set-Alias gr    Kapow-Git-Remote
-Set-Alias grb   Kapow-Git-Rebase
-set-Alias glo   Kapow-Git-Log
-set-Alias grh   Kapow-Git-ResetHead
-Set-Alias gcp   Kapow-Git-CherryPick
+Set-Alias g     Enable-GitTabExpansion
+Set-Alias gst   Send-GitStatus
+Set-Alias gi    Send-GitInit
+Set-Alias gd    Send-GitDiff
+Set-Alias gl    Send-GitPull
+Set-Alias gp    Send-GitPush
+Set-Alias ga    Send-GitAdd
+Set-Alias gc    Send-GitCommit
+Set-Alias gcmsg Send-GitCommitMessage
+Set-Alias gco   Send-GitCheckout
+Set-Alias gm    Send-GitMerge
+Set-Alias gb    Send-GitBranch
+Set-Alias gr    Send-GitRemote
+Set-Alias grb   Send-GitRebase
+set-Alias glo   Send-GitLog
+set-Alias grh   Send-GitResetHead
+Set-Alias gcp   Send-GitCherryPick
 
 # Functions
-Function Kapow-Git-TabExpansion {
+Function Enable-GitTabExpansion {
   Param(
     [ValidateSet(
       "add",
@@ -68,66 +68,66 @@ Function Kapow-Git-TabExpansion {
   git $Command $Args
 }
 
-Function Kapow-Git-Status {
+Function Send-GitStatus {
   git status $Args
 }
 
-Function Kapow-Git-Init {
+Function Send-GitInit {
   git init $Args
 }
 
-Function Kapow-Git-Diff {
+Function Send-GitDiff {
   git diff $Args
 }
 
-Function Kapow-Git-Pull {
+Function Send-GitPull {
   git pull $Args
 }
 
-Function Kapow-Git-Push {
+Function Send-GitPush {
   git push $Args
 }
 
-Function Kapow-Git-Add {
+Function Send-GitAdd {
   git add $Args
 }
 
-Function Kapow-Git-Commit {
+Function Send-GitCommit {
   git commit $Args
 }
 
-Function Kapow-Git-CommitMessage {
+Function Send-GitCommitMessage {
   git commit -m $Args
 }
 
-Function Kapow-Git-Checkout {
+Function Send-GitCheckout {
   git checkout $Args
 }
 
-Function Kapow-Git-Merge {
+Function Send-GitMerge {
   git merge $Args
 }
 
-Function Kapow-Git-Branch {
+Function Send-GitBranch {
   git branch $Args
 }
 
-Function Kapow-Git-Remote {
+Function Send-GitRemote {
   git remote $Args
 }
 
-Function Kapow-Git-Rebase {
+Function Send-GitRebase {
   git rebase $Args
 }
 
-Function Kapow-Git-Log {
+Function Send-GitLog {
   git log $Args
 }
 
-Function Kapow-Git-ResetHead {
+Function Send-GitResetHead {
   git reset HEAD $Args
 }
 
-Function Kapow-Git-CherryPick {
+Function Send-GitCherryPick {
   git cherry-pick $Args
 }

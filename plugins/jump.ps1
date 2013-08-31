@@ -16,12 +16,12 @@ If (-Not (Test-Path -Path $KapowJumpCacheFile)) {
 }
 
 # Aliases
-Set-Alias j  Kapow-Jump-Get
-Set-Alias jm Kapow-Jump-Set
-Set-Alias jl Kapow-Jump-List
+Set-Alias j  Get-Jump
+Set-Alias jm Set-Jump
+Set-Alias jl Get-AllJumps
 
 # Functions
-Function Kapow-Jump-Get {
+Function Get-Jump {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [alias("d")]
@@ -30,10 +30,10 @@ Function Kapow-Jump-Get {
   Set-Location (Get-Content $KapowJumpCacheFile | Select-String $Dir)
 }
 
-Function Kapow-Jump-Set {
+Function Set-Jump {
   Add-Content $KapowJumpCacheFile -Value $pwd
 }
 
-Function Kapow-Jump-List {
+Function Get-AllJumps {
   Get-Content $KapowJumpCacheFile
 }

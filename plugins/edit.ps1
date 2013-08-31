@@ -4,10 +4,10 @@
 #  For launching your default text editor.
 
 # Aliases
-Set-Alias edit Kapow-Edit-File
+Set-Alias edit Edit-File
 
 # Functions
-Function Kapow-Edit-File {
+Function Edit-File {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [alias("f")]

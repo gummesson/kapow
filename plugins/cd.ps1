@@ -4,35 +4,35 @@
 #  For navigating in the filesystem.
 
 # Aliases
-Set-Alias ..     Kapow-Cd-UpOne
-Set-Alias ...    Kapow-Cd-UpTwo
-Set-Alias ....   Kapow-Cd-UpThree
-Set-Alias .....  Kapow-Cd-UpFour
-Set-Alias ...... Kapow-Cd-UpFive
-Set-Alias mkcd   Kapow-Cd-MkDir
+Set-Alias ..     Set-LocationUpOneStep
+Set-Alias ...    Set-LocationUpTwoSteps
+Set-Alias ....   Set-LocationUpThreeSteps
+Set-Alias .....  Set-LocationUpFourSteps
+Set-Alias ...... Set-LocationUpFiveSteps
+Set-Alias mkcd   Set-LocationToNewDirectory
 
 # Functions
-Function Kapow-Cd-UpOne {
+Function Set-LocationUpOneStep {
   Set-Location ../
 }
 
-Function Kapow-Cd-UpTwo {
+Function Set-LocationUpTwoSteps {
   Set-Location ../../
 }
 
-Function Kapow-Cd-UpThree {
+Function Set-LocationUpThreeSteps {
   Set-Location ../../../
 }
 
-Function Kapow-Cd-UpFour {
+Function Set-LocationUpFourSteps {
   Set-Location ../../../../
 }
 
-Function Kapow-Cd-UpFive {
+Function Set-LocationUpFiveSteps {
   Set-Location ../../../../../
 }
 
-Function Kapow-Cd-MkDir {
+Function Set-LocationToNewDirectory {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [alias("p")]
