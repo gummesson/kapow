@@ -1,4 +1,5 @@
 # == Kapow! ====================================================================
+#
 # Jump plugin
 #  For "jumping" to a "marked" directory in the filesystem.
 #

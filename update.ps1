@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-# Update script
 
 # Pull from the repository
 git pull origin master

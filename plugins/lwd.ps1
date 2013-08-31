@@ -1,4 +1,5 @@
 # == Kapow! ====================================================================
+#
 # Last working directory plugin
 #  For navigating to and saving the last working directory.
 #

@@ -1,9 +1,11 @@
 # == Kapow! ====================================================================
 
+# Don't import Kapow! twice
 If (Get-Module Kapow) { Return }
 
 # == User settings =============================================================
 
+# The default settings for everything
 $KapowDefaultPath = "C:\Git\kapow"
 $KapowDefaultHome = "C:\"
 $KapowDefaultTheme = "punchy"
@@ -41,4 +43,5 @@ If ($KapowEnableGitColors -eq $true) {
 
 # == Exports ===================================================================
 
+# Export all the sourced function and aliases
 Export-ModuleMember -Function * -Alias *
