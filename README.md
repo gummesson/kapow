@@ -25,7 +25,7 @@ First you need to make sure that you can actually execute scripts by running `Ge
 
 ### Install Kapow!
 
-Run the `ìnstall.ps1` script by executing the following command: `.\install.ps1`. This will copy and create the `Kapow.psm1` file to the `WindowsPowerShell\Modules` folder. You can then import the module by adding `Import-Module Kapow` to either your `Windows.PowerShell_profile.ps1` or `profile.ps1` file.
+Clone the repository and run the `ìnstall.ps1` script by executing the following command: `.\install.ps1`. This will copy and create the `Kapow.psm1` file to the `WindowsPowerShell\Modules` folder. You can then import the module by adding `Import-Module Kapow` to either your `Windows.PowerShell_profile.ps1` or `profile.ps1` file.
 
 ### Set your default settings
 
