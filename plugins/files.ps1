@@ -1,24 +1,24 @@
 # ~ Kapow! ~
 #
-# List plugin
-#  For listing and search for and inside files.
+# Files plugin
+#  For working with files.
 #
 # Usage:
-#  lcd         List all files in the current directory
-#  lff *.md    List all files with the specified extension
-#  lfi "word"  List all files that contains the specified string
+#  fcd        List all files and folders in the current directory
+#  ff *.md    List all files with the specified extension
+#  fs "word"  List all files that contains the specified string
 
 # Aliases
-Set-Alias lcd Kapow-List-Files
-Set-Alias lff Kapow-List-FindFiles
-Set-Alias lfi Kapow-List-FindInside
+Set-Alias fcd Get-FilesInCurrentDirectory
+Set-Alias ff  Find-Files
+Set-Alias fs  Find-String
 
 # Functions
-Function Kapow-List-Files {
+Function Get-FilesInCurrentDirectory {
   Get-ChildItem -Name
 }
 
-Function Kapow-List-FindFiles {
+Function Find-Files {
   Param(
     [Parameter(Position = 0)]
     [alias("t")]
@@ -27,7 +27,7 @@ Function Kapow-List-FindFiles {
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
-Function Kapow-List-FindInside {
+Function Find-String {
   Param(
     [Parameter(Position = 0, Mandatory=$true)]
     [string]$Type,
