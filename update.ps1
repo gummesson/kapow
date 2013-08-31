@@ -1,4 +1,5 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Update script
 
 # Pull from the repository

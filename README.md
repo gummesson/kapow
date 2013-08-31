@@ -17,29 +17,25 @@ The PowerShell needs some love. Seriously.
 
 Kapow! requires atleast PowerShell 2.0 in order to run. You can find out which version you're using by running `$PSVersionTable.PsVersion`.
 
-Some of the plugins remove default aliases for certain PowerShell tasks, like `gl` for `Get-Location` in the `git` plugin. If you're a "casual" user of the PowerShell, ie. you use it for working with Git, to run a few RubyGems and so forth, it'll probably won't affect you, but be aware of it.
-
 ## Installation
 
 ### Set up the PowerShell
 
-First you need to make sure that you can actually execute scripts by running `Get-ExecutionPolicy` in the PowerShell. If the output doesn't say `RemoteSigned` or `Unrestricted` you need to run the PowerShell as an *Administrator* and execute the following command: `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm`. This will grant the current user the permission to run scripts.
+First you need to make sure that you can actually execute scripts by running `Get-ExecutionPolicy` in the PowerShell. If the output doesn't say `RemoteSigned` or `Unrestricted` you need to run the PowerShell as an *Administrator* and execute the following command: `Set-ExecutionPolicy RemoteSigned`. This will grant the current user the permission to run scripts.
 
 ### Install Kapow!
 
-If you haven't got a `Microsoft.PowerShell_profile.ps1` file in your `C:\Users\USERNAME\Documents\WindowsPowerShell` folder you can run the `ìnstall.ps1` script by executing the following command: `.\install.ps1`. This will copy the `example.profile.ps1` file to the `WindowsPowerShell` folder and rename it to `Microsoft.PowerShell_profile.ps1`.
-
-If you have a `Microsoft.PowerShell_profile.ps1` file in your `C:\Users\USERNAME\Documents\WindowsPowerShell` folder you need to copy the content of the `example.profile.ps1` and paste it into the your `Microsoft.PowerShell_profile.ps1` file.
+Run the `ìnstall.ps1` script by executing the following command: `.\install.ps1`. This will copy and create the `Kapow.psm1` file to the `WindowsPowerShell\Modules` folder. You can then import the module by adding `Import-Module Kapow` to either your `Windows.PowerShell_profile.ps1` or `profile.ps1` file.
 
 ### Set your default settings
 
-The next step is to set the `$KapowDefaultPath` variable to point to the right folder in the `Microsoft.PowerShell_profile.ps1` file. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder!
+The next step is to set the `$KapowDefaultPath` variable to point to the right folder in the `Kapow.psm1` file. The default path is `C:\Git\kapow`. This is incredibly important since everything will be sourced from that particular folder!
 
 Change the `$KapowDefaultHome` if you're planning on using a theme that's replacing your "home" folder with a tilde (`~`) and set the default prompt theme by changing the `$KapowDefaultTheme` variable.
 
-The `$KapowDefaultEditor` variable is primarily used in the `edit` plugin, so if you're not planning to use it you don't need to change it.
+The `$KapowDefaultEditor` variable is primarily used for the `edit` plugin, so if you're not planning to use it leave it blank. The same thing is true for the `$KapowEnableGitColors`. Set it to `$false` if you're not going to use the `git` plugin.
 
-The last thing you need to do is to choose which plugins to use. Look around in the `plugins` and then add them to the `$KapowDefaultPlugins` array in the `Microsoft.PowerShell_profile.ps1` file and you're done!
+The last thing you need to do is to choose which plugins to use. Look around in the `plugins` and then add them to the `$KapowDefaultPlugins` array in the `Kapow.psm1` file and you're done!
 
 ### Optional: install a better console
 
