@@ -14,7 +14,10 @@ Function Prompt {
 }
 
 Function Set-HomeDirectory {
-  Param($Path)
+  Param(
+    [Parameter(Position = 0)]
+    [string]$Path
+  )
   If ("$Path" -eq "$KapowDefaultHome") {
     Return $Path.Replace("$KapowDefaultHome", "~")
   } Else {

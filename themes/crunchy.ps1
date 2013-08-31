@@ -21,7 +21,7 @@ Function Prompt {
 }
 
 Function Set-GitBranch {
-  If (Test-Path -Path .\.git) {
+  If (Test-Path -Path ".\.git") {
     Write-Host "[" -NoNewline
     Write-Host $(git branch) -NoNewline -ForegroundColor Yellow
     Write-Host "]" -NoNewline
