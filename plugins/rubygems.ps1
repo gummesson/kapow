@@ -7,10 +7,10 @@
 #  rgm <Tab>  Cycle through common RubyGems commands.
 
 # Aliases
-Set-Alias rgm Kapow-RubyGems-TabExpansion
+Set-Alias rgm Enable-RubyGemsTabExpansion
 
 # Functions
-Function Kapow-RubyGems-TabExpansion {
+Function Enable-RubyGemsTabExpansion {
   Param(
     [ValidateSet(
       "build",
