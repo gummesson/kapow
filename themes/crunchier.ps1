@@ -21,7 +21,7 @@ Function Prompt {
 }
 
 Function Set-GitBranch {
-  If (Test-Path -Path .\.git) {
+  If (Test-Path -Path ".\.git") {
     Write-Host "[" -NoNewline
     Write-Host $(git branch) -NoNewline -ForegroundColor Yellow
     Write-Host "]" -NoNewline
@@ -29,10 +29,13 @@ Function Set-GitBranch {
 }
 
 Function Set-HomeDirectory {
-  Param($Path)
+  Param(
+    [Parameter(Position = 0)]
+    [string]$Path
+  )
   If ("$Path" -eq "$KapowDefaultHome") {
-    $Path.Replace("$KapowDefaultHome", "~")
+    Return $Path.Replace("$KapowDefaultHome", "~")
   } Else {
-    $Path.Replace("$KapowDefaultHome", "~\")
+    Return $Path.Replace("$KapowDefaultHome", "~\")
   }
 }
