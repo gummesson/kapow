@@ -1,4 +1,8 @@
 # == Kapow! ====================================================================
+#
+#  Installation script
+#
+# ==============================================================================
 
 # Set the path where the Kapow module gets sourced
 $KapowModulePath = "$HOME\Documents\WindowsPowerShell\Modules\Kapow"
