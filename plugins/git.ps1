@@ -3,14 +3,10 @@
 #  Git plugin
 #   For working with Git.
 #
-#  Usage:
-#   g <Tab>  Cycle through common Git commands.
-#
 # ==============================================================================
 
 # == Aliases ===================================================================
 
-Set-Alias g      Enable-GitTabExpansion
 Set-Alias gist   Send-GitStatus
 Set-Alias gii    Send-GitInit
 Set-Alias gid    Send-GitDiff
@@ -46,32 +42,3 @@ Function Send-GitRebase        { git rebase $Args }
 Function Send-GitLog           { git log $Args }
 Function Send-GitResetHead     { git reset HEAD $Args }
 Function Send-GitCherryPick    { git cherry-pick $Args }
-
-Function Enable-GitTabExpansion {
-  Param([ValidateSet(
-          "add",
-          "bisect",
-          "branch",
-          "checkout",
-          "clone",
-          "commit",
-          "diff",
-          "fetch",
-          "grep",
-          "help",
-          "init",
-          "log",
-          "merge",
-          "mv",
-          "pull",
-          "push",
-          "rebase",
-          "reset",
-          "rm",
-          "show",
-          "status",
-          "submodule",
-          "tag")]
-        [string]$Command)
-  git $Command $Args
-}
