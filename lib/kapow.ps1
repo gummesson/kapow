@@ -7,12 +7,12 @@ $KapowDocsPath = "$KapowDefaultPath\docs"
 
 # Import Kapow! plugins
 ForEach ($Plugin in $KapowDefaultPlugins) {
-  . $KapowDefaultPath\plugins\$Plugin.ps1
+  . "$KapowDefaultPath\plugins\$Plugin.ps1"
 }
 
 # Import custom plugins
-If (Test-Path -Path $KapowCustomPath) {
-  Get-ChildItem -Path $KapowCustomPath -Name -Include "*.ps1" |
+If (Test-Path -Path "$KapowCustomPath") {
+  Get-ChildItem -Path "$KapowCustomPath" -Name -Include "*.ps1" |
   ForEach { 
     . "$KapowCustomPath\$_"
   }
