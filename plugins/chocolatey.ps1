@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-#
 # Chocolatey plugin
 #  For working with Chocolatey.
 #

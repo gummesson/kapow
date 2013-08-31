@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-#
 # Edit plugin
 #  For launching your default text editor.
 

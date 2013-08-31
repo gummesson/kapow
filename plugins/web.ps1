@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-#
 # Web plugin
 #  For running various web based commands.
 

@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-#
 # Utilities plugin
 #  For easier access to utility commands.
 

@@ -1,5 +1,4 @@
 # == Kapow! ====================================================================
-#
 # Change directory plugin
 #  For navigating in the filesystem.
 
