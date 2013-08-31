@@ -1,10 +1,12 @@
 # == Kapow! ====================================================================
 #
-# RubyGems plugin
-#  For working with RubyGems.
+#  RubyGems plugin
+#   For working with RubyGems.
 #
-# Usage:
-#  rgm <Tab>  Cycle through common RubyGems commands.
+#  Usage:
+#   rgm <Tab>  Cycle through common RubyGems commands
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 

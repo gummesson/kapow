@@ -1,12 +1,14 @@
 # == Kapow! ====================================================================
 #
-# Files plugin
-#  For working with files.
+#  Files plugin
+#   For working with files.
 #
-# Usage:
-#  fcd        List all files and folders in the current directory
-#  ff *.md    List all files with the specified extension
-#  fs "word"  List all files that contains the specified string
+#  Usage:
+#   fcd        List all files and folders in the current directory
+#   ff *.md    List all files with the specified extension
+#   fs "word"  List all files that contains the specified string
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 

@@ -1,10 +1,12 @@
 # == Kapow! ====================================================================
 #
-# Jekyll plugin
-#  For working with Jekyll.
+#  Jekyll plugin
+#   For working with Jekyll.
 #
-# Usage:
-#  jkl <Tab>  Cycle through common Jekyll commands.
+#  Usage:
+#   jkl <Tab>  Cycle through common Jekyll commands.
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 

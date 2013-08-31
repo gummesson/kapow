@@ -1,10 +1,12 @@
 # == Kapow! ====================================================================
 #
-# Chocolatey plugin
-#  For working with Chocolatey.
+#  Chocolatey plugin
+#   For working with Chocolatey.
 #
-# Usage:
-#  choco <Tab>  Cycle through common Chocolatey commands.
+#  Usage:
+#   choco <Tab>  Cycle through common Chocolatey commands.
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 

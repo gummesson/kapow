@@ -1,7 +1,9 @@
 # == Kapow! ====================================================================
 #
-# Utilities plugin
-#  For easier access to utility commands.
+#  Utilities plugin
+#   For easier access to utility commands.
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 
@@ -13,6 +15,8 @@ Set-Alias plugins   Get-Plugins
 
 # == Functions =================================================================
 
+Function Get-Plugins { Get-Command -Module Kapow }
+
 Function Measure-Time {
   Param([Parameter(Position = 0, Mandatory=$true)]
       [alias("c")]
@@ -23,5 +27,3 @@ Function Measure-Time {
 Function Get-Version {
   Return "PowerShell: $($PSVersionTable.PsVersion.toString())"
 }
-
-Function Get-Plugins { Get-Command -Module Kapow }

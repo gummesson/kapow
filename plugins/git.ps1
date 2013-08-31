@@ -1,10 +1,12 @@
 # == Kapow! ====================================================================
 #
-# Git plugin
-#  For working with Git.
+#  Git plugin
+#   For working with Git.
 #
-# Usage:
-#  g <Tab>  Cycle through common Git commands.
+#  Usage:
+#   g <Tab>  Cycle through common Git commands.
+#
+# ==============================================================================
 
 # == Aliases ===================================================================
 
@@ -27,6 +29,23 @@ set-Alias girh   Send-GitResetHead
 Set-Alias gicp   Send-GitCherryPick
 
 # == Functions =================================================================
+
+Function Send-GitStatus        { git status $Args }
+Function Send-GitInit          { git init $Args }
+Function Send-GitDiff          { git diff $Args }
+Function Send-GitPull          { git pull $Args }
+Function Send-GitPush          { git push $Args }
+Function Send-GitAdd           { git add $Args }
+Function Send-GitCommit        { git commit $Args }
+Function Send-GitCommitMessage { git commit -m $Args }
+Function Send-GitCheckout      { git checkout $Args }
+Function Send-GitMerge         { git merge $Args }
+Function Send-GitBranch        { git branch $Args }
+Function Send-GitRemote        { git remote $Args }
+Function Send-GitRebase        { git rebase $Args }
+Function Send-GitLog           { git log $Args }
+Function Send-GitResetHead     { git reset HEAD $Args }
+Function Send-GitCherryPick    { git cherry-pick $Args }
 
 Function Enable-GitTabExpansion {
   Param([ValidateSet(
@@ -56,20 +75,3 @@ Function Enable-GitTabExpansion {
         [string]$Command)
   git $Command $Args
 }
-
-Function Send-GitStatus { git status $Args } 
-Function Send-GitInit { git init $Args }
-Function Send-GitDiff { git diff $Args }
-Function Send-GitPull { git pull $Args }
-Function Send-GitPush { git push $Args }
-Function Send-GitAdd { git add $Args }
-Function Send-GitCommit { git commit $Args }
-Function Send-GitCommitMessage { git commit -m $Args }
-Function Send-GitCheckout { git checkout $Args }
-Function Send-GitMerge { git merge $Args }
-Function Send-GitBranch { git branch $Args }
-Function Send-GitRemote { git remote $Args }
-Function Send-GitRebase { git rebase $Args }
-Function Send-GitLog { git log $Args }
-Function Send-GitResetHead { git reset HEAD $Args }
-Function Send-GitCherryPick { git cherry-pick $Args }
