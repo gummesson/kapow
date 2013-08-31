@@ -1,7 +1,10 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Inon theme
+#  User in C:\Git\Repo on * master ~>
 
-# User in C:\Git\Repo on * master ~>
+# == Functions =================================================================
+
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host " " -NoNewline

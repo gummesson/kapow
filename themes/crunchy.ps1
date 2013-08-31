@@ -1,8 +1,11 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Crunchy theme
+#  [User][12:00:00][C:\Git\Repo][* master]
+#  -> %
 
-# [Userr][12:00:00][C:\Git\Repo][* master]
-# -> %
+# == Functions =================================================================
+
 Function Prompt {
   Write-Host "[" -NoNewline
   Write-Host "$env:username" -NoNewline -ForegroundColor Green

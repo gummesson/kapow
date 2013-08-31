@@ -1,8 +1,11 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Crunchier theme
+#  [User][12:00:00][~\Git\Repo][* master]
+#  -> %
 
-# [User][12:00:00][~\Git\Repo][* master]
-# -> %
+# == Functions =================================================================
+
 Function Prompt {
   Write-Host "[" -NoNewline
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
@@ -29,10 +32,8 @@ Function Set-GitBranch {
 }
 
 Function Set-HomeDirectory {
-  Param(
-    [Parameter(Position = 0)]
-    [string]$Path
-  )
+  Param([Parameter(Position = 0)]
+        [string]$Path)
   If ("$Path" -eq "$KapowDefaultHome") {
     Return $Path.Replace("$KapowDefaultHome", "~")
   } Else {

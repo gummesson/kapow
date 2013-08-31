@@ -1,7 +1,10 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Simple theme
+#  C:\>
 
-# C:\>
+# == Functions =================================================================
+
 Function Prompt { 
   Write-Host "$pwd" -NoNewline
   Write-Host ">" -NoNewline

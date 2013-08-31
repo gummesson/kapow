@@ -1,8 +1,11 @@
-# ~ Kapow! ~
+# == Kapow! ====================================================================
+#
 # Bashlet theme
+#  User@Computer ~\Git\Repo
+#  $
 
-# User@Computer ~\Git\Repo
-# $
+# == Functions =================================================================
+
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host "@" -NoNewline
@@ -14,10 +17,8 @@ Function Prompt {
 }
 
 Function Set-HomeDirectory {
-  Param(
-    [Parameter(Position = 0)]
-    [string]$Path
-  )
+  Param([Parameter(Position = 0)]
+        [string]$Path)
   If ("$Path" -eq "$KapowDefaultHome") {
     Return $Path.Replace("$KapowDefaultHome", "~")
   } Else {
