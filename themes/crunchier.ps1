@@ -34,11 +34,10 @@ Function Set-GitBranch {
 }
 
 Function Set-HomeDirectory {
-  Param([Parameter(Position = 0)]
-        [string]$Path)
+  Param($Path)
   If ("$Path" -eq "$KapowDefaultHome") {
-    Return $Path.Replace("$KapowDefaultHome", "~")
+    $Path.Replace("$KapowDefaultHome", "~")
   } Else {
-    Return $Path.Replace("$KapowDefaultHome", "~\")
+    $Path.Replace("$KapowDefaultHome", "~\")
   }
 }

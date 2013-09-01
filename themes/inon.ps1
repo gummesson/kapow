@@ -20,7 +20,7 @@ Function Prompt {
 }
 
 Function Set-GitBranch {
-  If (Test-Path -Path .\.git) {
+  If (Test-Path -Path ".\.git") {
     Write-Host " " -NoNewline
     Write-Host "on" -NoNewline
     Write-Host " " -NoNewline

@@ -5,7 +5,9 @@
 # ==============================================================================
 
 # Don't import Kapow! twice
-If (Get-Module Kapow) { Return }
+If (Get-Module Kapow) {
+  Return
+}
 
 # == User settings =============================================================
 
