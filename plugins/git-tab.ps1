@@ -39,6 +39,6 @@ Function Invoke-GitTabExpansion {
           "status",
           "submodule",
           "tag")]
-        [string]$Command)
+        [String]$Command)
   git $Command $Args
 }

@@ -19,8 +19,8 @@ Function Get-Plugins { Get-Command -Module Kapow }
 
 Function Measure-Time {
   Param([Parameter(Position = 0, Mandatory=$true)]
-      [alias("c")]
-      [string]$Command)
+      [Alias("c")]
+      [String]$Command)
   Measure-Command { $Command }
 }
 

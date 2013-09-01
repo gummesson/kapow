@@ -34,6 +34,6 @@ Function Invoke-RubyGemsTabExpansion {
           "unpack",
           "update",
           "which")]
-      [string]$Command)
+      [String]$Command)
   gem $Command $Args
 }

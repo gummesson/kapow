@@ -34,6 +34,6 @@ Function Invoke-CompassTabExpansion {
           "validate",
           "version",
           "watch")]
-        [string]$Command)
+        [String]$Command)
   compass $Command $Args
 }

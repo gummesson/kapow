@@ -22,18 +22,18 @@ Function Get-FilesInCurrentDirectory { Get-ChildItem -Name }
 
 Function Find-AllFiles {
   Param([Parameter(Position = 0)]
-        [alias("t")]
-        [string]$Type = "*.*")
+        [Alias("t")]
+        [String]$Type = "*.*")
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
 Function Find-StringInFiles {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [string]$Type,
-        [alias("t")]
+        [String]$Type,
+        [Alias("t")]
         [Parameter(Position = 1, Mandatory=$true)]
-        [alias("s")]
-        [string]$String)
+        [Alias("s")]
+        [String]$String)
   Get-ChildItem -Recurse -Include $Type | Select-String $String | ForEach {
     (($_ -split ":\s+") -join ":")
   }

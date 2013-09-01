@@ -13,7 +13,7 @@ Set-Alias sudo Start-AsSudo
 
 Function Start-AsSudo {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [alias("a")]
-        [string]$Application)
+        [Alias("a")]
+        [String]$Application)
   Start-Process $Application -Verb "runAs" 
 }

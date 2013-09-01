@@ -16,6 +16,7 @@ Set-Alias goo Search-Google
 
 Function Search-Google {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [string]$SearchTerm)
+        [Alias("s")]
+        [String]$SearchTerm)
   Start-Process "http://www.google.com/search?q=$SearchTerm"
 }

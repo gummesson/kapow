@@ -23,6 +23,6 @@ Function Invoke-JekyllTabExpansion {
           "import",
           "new",
           "serve")]
-        [string]$Command)
+        [String]$Command)
   jekyll $Command $Args
 }

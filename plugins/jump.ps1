@@ -29,8 +29,8 @@ If (-Not (Test-Path -Path "$KapowJumpCacheFile")) {
 
 Function Get-Jump {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [alias("d")]
-        [string]$Dir)
+        [Alias("d")]
+        [String]$Dir)
   Set-Location (Get-Content "$KapowJumpCacheFile" | Select-String "$Dir")
 }
 

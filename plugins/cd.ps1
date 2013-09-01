@@ -27,8 +27,8 @@ Function Set-LocationUpFiveSteps  { Set-Location ../../../../../ }
 
 Function Set-LocationToNewDirectory {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [alias("p")]
-        [string]$Path)
+        [Alias("p")]
+        [String]$Path)
   New-Item -Path $Path -ItemType directory > $null
   Set-Location $Path
 }

@@ -26,6 +26,6 @@ Function Invoke-ChocolateyTabExpansion {
           "windowsfeatures",
           "gem",
           "uninstall")]
-        [string]$Command)
+        [String]$Command)
   chocolatey $Command $Args
 }

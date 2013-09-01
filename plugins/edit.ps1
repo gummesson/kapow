@@ -13,7 +13,7 @@ Set-Alias edit Edit-File
 
 Function Edit-File {
   Param([Parameter(Position = 0, Mandatory=$true)]
-        [alias("f")]
-        [string]$File)
+        [Alias("f")]
+        [String]$File)
   Invoke-Expression "$KapowDefaultEditor $File"
 }
