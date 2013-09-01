@@ -15,13 +15,19 @@ Set-Alias plugins   Get-Plugins
 
 # == Functions =================================================================
 
-Function Get-Plugins { Get-Command -Module Kapow }
+Function Get-KapowPlugins {
+  Get-Command -Module Kapow
+}
 
 Function Measure-Time {
-  Param([Parameter(Position = 0, Mandatory=$true)]
-      [Alias("c")]
-      [String]$Command)
-  Measure-Command { $Command }
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [Alias("c")]
+    [String]$Command
+  )
+  Measure-Command { 
+    $Command
+  }
 }
 
 Function Get-Version {

@@ -15,17 +15,19 @@ Set-Alias choco Invoke-ChocolateyTabExpansion
 # == Functions =================================================================
 
 Function Invoke-ChocolateyTabExpansion {
-  Param([ValidateSet(
-          "install",
-          "installmissing",
-          "update",
-          "list",
-          "help",
-          "version",
-          "webpi",
-          "windowsfeatures",
-          "gem",
-          "uninstall")]
-        [String]$Command)
+  Param(
+    [ValidateSet(
+      "install",
+      "installmissing",
+      "update",
+      "list",
+      "help",
+      "version",
+      "webpi",
+      "windowsfeatures",
+      "gem",
+      "uninstall")]
+    [String]$Command
+  )
   chocolatey $Command $Args
 }

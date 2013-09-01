@@ -18,22 +18,28 @@ Set-Alias fs  Find-StringInFiles
 
 # == Functions =================================================================
 
-Function Get-FilesInCurrentDirectory { Get-ChildItem -Name }
+Function Get-FilesInCurrentDirectory {
+  Get-ChildItem -Name
+}
 
 Function Find-AllFiles {
-  Param([Parameter(Position = 0)]
-        [Alias("t")]
-        [String]$Type = "*.*")
+  Param(
+    [Parameter(Position = 0)]
+    [Alias("t")]
+    [String]$Type = "*.*"
+  )
   Get-ChildItem -Name -Recurse -Include $Type
 }
 
 Function Find-StringInFiles {
-  Param([Parameter(Position = 0, Mandatory=$true)]
-        [String]$Type,
-        [Alias("t")]
-        [Parameter(Position = 1, Mandatory=$true)]
-        [Alias("s")]
-        [String]$String)
+  Param(
+    [Parameter(Position = 0, Mandatory=$true)]
+    [Alias("t")]
+    [String]$Type,
+    [Parameter(Position = 1, Mandatory=$true)]
+    [Alias("s")]
+    [String]$String
+  )
   Get-ChildItem -Recurse -Include $Type | Select-String $String | ForEach {
     (($_ -split ":\s+") -join ":")
   }

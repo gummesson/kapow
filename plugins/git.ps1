@@ -26,19 +26,66 @@ Set-Alias gicp   Invoke-GitCherryPick
 
 # == Functions =================================================================
 
-Function Invoke-GitStatus        { git status $Args }
-Function Invoke-GitInit          { git init $Args }
-Function Invoke-GitDiff          { git diff $Args }
-Function Invoke-GitPull          { git pull $Args }
-Function Invoke-GitPush          { git push $Args }
-Function Invoke-GitAdd           { git add $Args }
-Function Invoke-GitCommit        { git commit $Args }
-Function Invoke-GitCommitMessage { git commit -m $Args }
-Function Invoke-GitCheckout      { git checkout $Args }
-Function Invoke-GitMerge         { git merge $Args }
-Function Invoke-GitBranch        { git branch $Args }
-Function Invoke-GitRemote        { git remote $Args }
-Function Invoke-GitRebase        { git rebase $Args }
-Function Invoke-GitLog           { git log $Args }
-Function Invoke-GitResetHead     { git reset HEAD $Args }
-Function Invoke-GitCherryPick    { git cherry-pick $Args }
+Function Invoke-GitStatus {
+  git status $Args
+}
+
+Function Invoke-GitInit {
+  git init $Args
+}
+
+Function Invoke-GitDiff {
+  git diff $Args
+}
+
+Function Invoke-GitPull {
+  git pull $Args
+}
+
+Function Invoke-GitPush {
+  git push $Args
+}
+
+Function Invoke-GitAdd {
+  git add $Args
+}
+
+Function Invoke-GitCommit {
+  git commit $Args
+}
+
+Function Invoke-GitCommitMessage {
+  git commit -m $Args
+}
+
+Function Invoke-GitCheckout {
+  git checkout $Args
+}
+
+Function Invoke-GitMerge {
+  git merge $Args
+}
+
+Function Invoke-GitBranch {
+  git branch $Args
+}
+
+Function Invoke-GitRemote {
+  git remote $Args
+}
+
+Function Invoke-GitRebase {
+  git rebase $Args
+}
+
+Function Invoke-GitLog {
+  git log $Args
+}
+
+Function Invoke-GitResetHead {
+  git reset HEAD $Args
+}
+
+Function Invoke-GitCherryPick {
+  git cherry-pick $Args
+}
