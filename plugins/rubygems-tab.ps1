@@ -10,11 +10,11 @@
 
 # == Aliases ===================================================================
 
-Set-Alias rgm Enable-RubyGemsTabExpansion
+Set-Alias rgm Invoke-RubyGemsTabExpansion
 
 # == Functions =================================================================
 
-Function Enable-RubyGemsTabExpansion {
+Function Invoke-RubyGemsTabExpansion {
   Param([ValidateSet(
           "build",
           "cert",

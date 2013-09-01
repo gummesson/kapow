@@ -10,11 +10,11 @@
 
 # == Aliases ===================================================================
 
-Set-Alias cmps Enable-CompassTabExpansion
+Set-Alias cmps Invoke-CompassTabExpansion
 
 # == Functions =================================================================
 
-Function Enable-CompassTabExpansion {
+Function Invoke-CompassTabExpansion {
   Param([ValidateSet(
           "clean",
           "compile",

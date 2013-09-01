@@ -10,11 +10,11 @@
 
 # == Aliases ===================================================================
 
-Set-Alias jkl Enable-JekyllTabExpansion
+Set-Alias jkl Invoke-JekyllTabExpansion
 
 # == Functions =================================================================
 
-Function Enable-JekyllTabExpansion {
+Function Invoke-JekyllTabExpansion {
   Param([ValidateSet(
           "build",
           "docs",

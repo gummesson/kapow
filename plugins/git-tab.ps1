@@ -10,11 +10,11 @@
 
 # == Aliases ===================================================================
 
-Set-Alias g Enable-GitTabExpansion
+Set-Alias g Invoke-GitTabExpansion
 
 # == Functions =================================================================
 
-Function Enable-GitTabExpansion {
+Function Invoke-GitTabExpansion {
   Param([ValidateSet(
           "add",
           "bisect",

@@ -10,11 +10,11 @@
 
 # == Aliases ===================================================================
 
-Set-Alias choco Enable-ChocolateyTabExpansion
+Set-Alias choco Invoke-ChocolateyTabExpansion
 
 # == Functions =================================================================
 
-Function Enable-ChocolateyTabExpansion {
+Function Invoke-ChocolateyTabExpansion {
   Param([ValidateSet(
           "install",
           "installmissing",
