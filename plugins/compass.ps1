@@ -12,5 +12,10 @@ Set-Alias cmpsw Invoke-CompassWatch
 
 # == Functions =================================================================
 
-Function Invoke-CompassCompile { compass compile $Args }
-Function Invoke-CompassWatch   { compass watch $Args }
+Function Invoke-CompassCompile {
+  compass compile $Args
+}
+
+Function Invoke-CompassWatch {
+  compass watch $Args
+}

@@ -25,7 +25,7 @@ Function Measure-Time {
     [Alias("c")]
     [String]$Command
   )
-  Measure-Command { 
+  Measure-Command {
     $Command
   }
 }

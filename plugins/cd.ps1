@@ -20,7 +20,7 @@ Set-Alias mkcd   Set-LocationToNewDirectory
 # == Functions =================================================================
 
 Function Set-LocationUpOneStep {
-  Set-Location ../ 
+  Set-Location ../
 }
 
 Function Set-LocationUpTwoSteps {

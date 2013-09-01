@@ -17,5 +17,5 @@ Function Start-AsSudo {
     [Alias("a")]
     [String]$Application
   )
-  Start-Process $Application -Verb "runAs" 
+  Start-Process $Application -Verb "runAs"
 }

@@ -24,5 +24,5 @@ Function Add-SymbolicLink {
     [String]$Target
   )
   $Link = "/c mklink $Target $Source"
-  Start-Process cmd.exe -ArgumentList "$Link" -Verb "RunAs" 
+  Start-Process cmd.exe -ArgumentList "$Link" -Verb "RunAs"
 }
