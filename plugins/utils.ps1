@@ -8,6 +8,7 @@
 # == Aliases ===================================================================
 
 Set-Alias touch     touch.exe
+Set-Alias which     Get-Command
 Set-Alias clip      clip.exe
 Set-Alias time      Measure-Time
 Set-Alias psversion Get-Version
