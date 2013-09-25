@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Change directory plugin
 #   For navigating in the filesystem.
@@ -6,9 +5,8 @@
 #  Usage:
 #   mkcd [DIRECTORY]  Create a new directory and navigate in to it.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias ..     Set-LocationUpOneStep
 Set-Alias ...    Set-LocationUpTwoSteps
@@ -17,7 +15,7 @@ Set-Alias .....  Set-LocationUpFourSteps
 Set-Alias ...... Set-LocationUpFiveSteps
 Set-Alias mkcd   Set-LocationToNewDirectory
 
-# == Functions =================================================================
+# Functions
 
 Function Set-LocationUpOneStep {
   Set-Location ../

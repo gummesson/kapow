@@ -1,11 +1,9 @@
-# == Kapow! ====================================================================
 #
 #  Git plugin
 #   For working with Git.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias gist   Invoke-GitStatus
 Set-Alias gii    Invoke-GitInit
@@ -24,7 +22,7 @@ set-Alias gilo   Invoke-GitLog
 set-Alias girh   Invoke-GitResetHead
 Set-Alias gicp   Invoke-GitCherryPick
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-GitStatus {
   git status $Args

@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Git plugin
 #   For working with Git.
@@ -6,13 +5,12 @@
 #  Usage:
 #   g <Tab>  Cycle through common Git commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias g Invoke-GitTabExpansion
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-GitTabExpansion {
   Param(

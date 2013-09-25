@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Compass plugin
 #   For working with Compass.
@@ -6,13 +5,12 @@
 #  Usage:
 #   cmps <Tab>  Cycle through common Compass commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias cmps Invoke-CompassTabExpansion
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-CompassTabExpansion {
   Param(

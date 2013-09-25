@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Last working directory plugin
 #   For navigating to and saving the last working directory.
@@ -7,19 +6,18 @@
 #   lwd   Go to the last working directory.
 #   quit  Save the last working directory and exit.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias lwd  Get-LastWorkingDirectory
 Set-Alias quit Set-LastWorkingDirectory
 
-# == Configuration =============================================================
+# Configuration
 
 # The cache file
 $KapowCacheLwdFile = "$KapowCachePath\lwd"
 
-# == Functions =================================================================
+# Functions
 
 Function Get-LastWorkingDirectory {
   Set-Location (Get-Content -Path "$KapowCacheLwdFile")

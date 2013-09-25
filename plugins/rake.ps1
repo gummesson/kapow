@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Rake plugin
 #   For enabling case-by-case tab expansion for Rake tasks
@@ -7,9 +6,8 @@
 #  Usage:
 #   rake <Tab>  Cycle through the specific tasks of the project.
 #
-# ==============================================================================
 
-# == Functions =================================================================
+# Functions
 
 Function TabExpansion {
   Param(

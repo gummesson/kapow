@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  RubyGems plugin
 #   For working with RubyGems.
@@ -6,13 +5,12 @@
 #  Usage:
 #   rgm <Tab>  Cycle through common RubyGems commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias rgm Invoke-RubyGemsTabExpansion
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-RubyGemsTabExpansion {
   Param(

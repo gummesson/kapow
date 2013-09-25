@@ -1,12 +1,10 @@
-# == Kapow! ====================================================================
 #
 #  Bashlet theme
 #   User@Computer ~\Git\Repo
 #   $
 #
-# ==============================================================================
 
-# == Functions =================================================================
+# Functions
 
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green

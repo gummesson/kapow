@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Symlink plugin
 #   For creating symbolic links.
@@ -6,13 +5,12 @@
 #  Usage:
 #   symlink [SOURCE] [TARGET]
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias symlink Add-SymbolicLink
 
-# == Functions =================================================================
+# Functions
 
 Function Add-SymbolicLink {
   Param(

@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Jump plugin
 #   For "jumping" to a "marked" directory in the filesystem.
@@ -8,15 +7,14 @@
 #   jm another-project  Mark the current directory.
 #   jl                  List the marked directories.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias j  Get-Jump
 Set-Alias jm Set-Jump
 Set-Alias jl Get-AllJumps
 
-# == Configuration =============================================================
+# Configuration
 
 # The cache file
 $KapowJumpCacheFile = "$KapowCachePath\jumps"
@@ -25,7 +23,7 @@ If (-Not (Test-Path -Path "$KapowJumpCacheFile")) {
   New-Item -Path "$KapowJumpCacheFile" -ItemType file > $null
 }
 
-# == Functions =================================================================
+# Functions
 
 Function Get-Jump {
   Param(

@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Jekyll plugin
 #   For working with Jekyll.
@@ -6,13 +5,12 @@
 #  Usage:
 #   jkl <Tab>  Cycle through common Jekyll commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias jkl Invoke-JekyllTabExpansion
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-JekyllTabExpansion {
   Param(

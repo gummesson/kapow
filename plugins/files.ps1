@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Files plugin
 #   For working with files.
@@ -8,15 +7,14 @@
 #   ff [EXTENSION]    List all files with the specified extension.
 #   fs [SEARCH TERM]  List all files that contains the specified string.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias fcd Get-FilesInCurrentDirectory
 Set-Alias ff  Find-AllFiles
 Set-Alias fs  Find-StringInFiles
 
-# == Functions =================================================================
+# Functions
 
 Function Get-FilesInCurrentDirectory {
   Get-ChildItem -Name

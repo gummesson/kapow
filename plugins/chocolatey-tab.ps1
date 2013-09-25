@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Chocolatey plugin
 #   For working with Chocolatey.
@@ -6,13 +5,12 @@
 #  Usage:
 #   choco <Tab>  Cycle through common Chocolatey commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias choco Invoke-ChocolateyTabExpansion
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-ChocolateyTabExpansion {
   Param(

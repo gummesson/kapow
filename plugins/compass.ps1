@@ -1,16 +1,14 @@
-# == Kapow! ====================================================================
 #
 #  Compass plugin
 #   For working with Compass.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias cmpsc Invoke-CompassCompile
 Set-Alias cmpsw Invoke-CompassWatch
 
-# == Functions =================================================================
+# Functions
 
 Function Invoke-CompassCompile {
   compass compile $Args
