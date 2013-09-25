@@ -1,4 +1,3 @@
-# == Kapow! ====================================================================
 #
 #  Web plugin
 #   For running various web based commands.
@@ -6,13 +5,12 @@
 #  Usage:
 #   goo [SEARCH TERM]  Search after a specific term on Google.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias goo Search-Google
 
-# == Functions =================================================================
+# Functions
 
 Function Search-Google {
   Param(

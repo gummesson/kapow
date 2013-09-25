@@ -1,11 +1,9 @@
-# == Kapow! ====================================================================
 #
 #  Utilities plugin
 #   For easier access to utility commands.
 #
-# ==============================================================================
 
-# == Aliases ===================================================================
+# Aliases
 
 Set-Alias touch     touch.exe
 Set-Alias which     Get-Command
@@ -14,7 +12,7 @@ Set-Alias time      Measure-Time
 Set-Alias psversion Get-Version
 Set-Alias plugins   Get-Plugins
 
-# == Functions =================================================================
+# Functions
 
 Function Get-KapowPlugins {
   Get-Command -Module Kapow
